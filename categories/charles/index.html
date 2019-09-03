@@ -163,7 +163,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    4 minutes read (About 534 words)
+                    5 minutes read (About 806 words)
                 </span>
                 
                 
@@ -176,9 +176,37 @@
             
         </h1>
         <div class="content">
-            <h1 id="charles-浏览器和手机抓包"><a href="#charles-浏览器和手机抓包" class="headerlink" title="charles 浏览器和手机抓包"></a>charles 浏览器和手机抓包</h1><p>@(charles)[http|https]<br>[TOC]<br>http手机抓包操作步骤：1.打开Charles，点击proxy-点击Mac OS x proxy取消前面的对勾，对勾保存是电脑抓包-点击proxy setting-在enable transparent http proxy 前面打对勾然后点击ok-点击设置保证跟电脑连接的是同一个局域网点击链接的wifi-选择手动-输入服务器的IP（安装了Charles的电脑的IP地址，可在Charles-help-local IP adress中查看）和端口号-点击Charles（⭕️）开始录制按钮，手机这边操作就可以开始抓包了；<br>Https手机抓包步骤：<br>过滤：<br>方法一：打开Charles，页面左下方有一个filters，在里面输入自己想要过滤的内容部分即可<br>方法二：菜单栏选择 “Proxy”-&gt;”Recording Settings”，在弹出的窗口中选择 Include 栏，再点击“Add”，在弹出的窗口中输入需要监控的协议，主机地址，端口号等信息，来添加一个项目。<br>方法三：在想过滤的网络请求上右击，选择 “Focus”，之后在 Filter 一栏勾选上 Focussed 一项</p>
-<h3 id="Charles-Android-ios手机抓https协议"><a href="#Charles-Android-ios手机抓https协议" class="headerlink" title="Charles Android/ios手机抓https协议"></a>Charles Android/ios手机抓https协议</h3><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-number">1.</span>电脑端打开Charles-help-ssl proxying-install Charles root certificate</span><br><span class="line"><span class="hljs-number">2.</span>下载安装证书，默认路径不需要更改，在钥匙串访问中选择证书双击证书文件-选择始始终信任</span><br><span class="line"><span class="hljs-number">3.</span>电脑端打开Charles-help-ssl proxying-install Charles root certificate on a mobile  device <span class="hljs-keyword">or</span> remote browers-下载安装证书，默认路径不需要更改，在钥匙串访问中选择证书双击证书文件-选择始始终信任</span><br><span class="line"><span class="hljs-number">4.</span>设置手机代理,要抓包的手机与电脑在同一个局域网下（链接同一个Wi-Fi即可），打开手机设置-选择已经连接的Wi-Fi-手动代理-输入安装charles电脑的IP（charles-help-localip address）和端口号（proxy-proxy setting-proxies）</span><br><span class="line"><span class="hljs-number">5.</span>手机在浏览器中输入：</span><br></pre></td></tr></table></figure>
+            <h1 id="charles-浏览器和手机抓包"><a href="#charles-浏览器和手机抓包" class="headerlink" title="charles 浏览器和手机抓包"></a>charles 浏览器和手机抓包</h1><p>@(charles)[http|https]<br>[TOC]</p>
+<p>##http手机抓包操作步骤</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">打开Charles，点击proxy-点击Mac OS x proxy取消前面的对勾，对勾保存是电脑抓包-点击proxy setting-在enable transparent http proxy 前面打对勾然后点击ok-点击设置保证跟电脑连接的是同一个局域网点击链接的wifi-选择手动-输入服务器的IP（安装了Charles的电脑的IP地址，可在Charles-help-local IP adress中查看）和端口号-点击Charles（⭕️）开始录制按钮，手机这边操作就可以开始抓包了；</span><br></pre></td></tr></table></figure>
 
+<p>##Charles Android/ios手机抓https协议</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-number">1.</span>电脑端打开Charles-help-ssl proxying-install Charles root certificate</span><br><span class="line"><span class="hljs-number">2.</span>下载安装证书，默认路径不需要更改，在钥匙串访问中选择证书双击证书文件-选择始始终信任</span><br><span class="line"><span class="hljs-number">3.</span>电脑端打开Charles-help-ssl proxying-install Charles root certificate on a mobile  device <span class="hljs-keyword">or</span> remote browers-下载安装证书，默认路径不需要更改，在钥匙串访问中选择证书双击证书文件-选择始始终信任</span><br><span class="line"><span class="hljs-number">4.</span>设置手机代理,要抓包的手机与电脑在同一个局域网下（链接同一个Wi-Fi即可），打开手机设置-选择已经连接的Wi-Fi-手动代理-输入安装charles电脑的IP（charles-help-localip address）和端口号（proxy-proxy setting-proxies）</span><br><span class="line"><span class="hljs-number">5.</span>手机在浏览器中输入：chls.pro/ssl</span><br><span class="line"><span class="hljs-number">6.</span>手机弹出提示：安装配置描述文件，选择允许，即可</span><br></pre></td></tr></table></figure>
+
+<h2 id="Charles过滤"><a href="#Charles过滤" class="headerlink" title="Charles过滤"></a>Charles过滤</h2><figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">方法一：打开Charles，页面左下方有一个filters，在里面输入自己想要过滤的内容部分即可</span><br><span class="line"></span><br><span class="line">方法二：菜单栏选择 “Proxy”-&gt;”Recording Settings”，在弹出的窗口中选择 Include 栏，再点击“Add”，在弹出的窗口中输入需要监控的协议，主机地址，端口号等信息，来添加一个项目。</span><br><span class="line"></span><br><span class="line">方法三：在想过滤的网络请求上右击，选择 “Focus”，之后在 Filter 一栏勾选上 Focussed 一项</span><br></pre></td></tr></table></figure>
+
+<p>##Charles模拟弱网测试</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">打开charles-proxy-throttle Settings-勾选Enable settings-在throttle preset中选择要模拟的网路环境，如果没有的话可以自己在下方设置-ok</span><br></pre></td></tr></table></figure>
+
+<p>##charles如何打断点，修改response数据</p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-number">1.</span>打开将要访问的网址，通过Charles抓到想要修改数据的接口,双击接口连接勾选Breakpoints</span><br></pre></td></tr></table></figure>
+
+<p><img src="/Users/qingclass/Desktop/Snip20190903_45.png" alt="nip20190903_4"></p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-number">2.</span>点击Charles-proxy-Breakpoints settings</span><br></pre></td></tr></table></figure>
+
+<p><img src="/Users/qingclass/Desktop/Snip20190903_46.png" alt="nip20190903_4"></p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-number">3.</span>进入breakpoint settings页面,设置完成之后，点击ok</span><br></pre></td></tr></table></figure>
+
+<p><img src="/Users/qingclass/Desktop/Snip20190903_48.png" alt="nip20190903_4"></p>
+<figure class="highlight python hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-number">4.</span>重新访问该接口，charles自动跳转到breakpoints页面</span><br></pre></td></tr></table></figure>
+
+<p><img src="/Users/qingclass/Desktop/20180614153559373.png" alt="018061415355937"></p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">5.此时修改Response数据，点击Edit Response，切换底部tab至Text，修改所需要的数据</span><br></pre></td></tr></table></figure>
+
+<p><img src="/Users/qingclass/Desktop/20180614153939637.png" alt="018061415393963"></p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">6.修改数据后，点击Execute，查看访问的页面，数据将会显示已修改的Response数据</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://img-blog.csdn.net/20180614154138728?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L0pveWNlX3hpYW9iYWliYWk=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="img"></p>
 
         </div>
         
@@ -237,7 +265,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        6
+                        8
                     </p>
                 </div>
             </div>
@@ -247,7 +275,7 @@
                         Categories
                     </p>
                     <p class="title has-text-weight-normal">
-                        5
+                        7
                     </p>
                 </div>
             </div>
@@ -257,7 +285,7 @@
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        10
+                        12
                     </p>
                 </div>
             </div>
@@ -348,9 +376,25 @@
                 <span class="level-item tag">1</span>
             </span>
         </a></li><li>
+        <a class="level is-marginless" href="/categories/公众号/">
+            <span class="level-start">
+                <span class="level-item">公众号</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
         <a class="level is-marginless" href="/categories/手工测试-接口测试/">
             <span class="level-start">
                 <span class="level-item">手工测试,接口测试</span>
+            </span>
+            <span class="level-end">
+                <span class="level-item tag">1</span>
+            </span>
+        </a></li><li>
+        <a class="level is-marginless" href="/categories/移动端兼容性测试/">
+            <span class="level-start">
+                <span class="level-item">移动端兼容性测试</span>
             </span>
             <span class="level-end">
                 <span class="level-item tag">1</span>
@@ -367,6 +411,44 @@
         <h3 class="menu-label">
             Recent
         </h3>
+        
+        <article class="media">
+            
+            <a href="/2019/09/03/公众号测试/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="公众号测试">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-03T07:55:01.000Z">2019-09-03</time></div>
+                    <a href="/2019/09/03/公众号测试/" class="has-link-black-ter is-size-6">公众号测试</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/公众号/">公众号</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
+            <a href="/2019/09/03/app测试/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="app测试">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-03T07:54:39.000Z">2019-09-03</time></div>
+                    <a href="/2019/09/03/app测试/" class="has-link-black-ter is-size-6">app测试</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/移动端兼容性测试/">移动端兼容性测试</a>
+                    </p>
+                </div>
+            </div>
+        </article>
         
         <article class="media">
             
@@ -425,44 +507,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/08/27/Charles/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="Charles手机和浏览器抓包">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-27T09:08:05.000Z">2019-08-27</time></div>
-                    <a href="/2019/08/27/Charles/" class="has-link-black-ter is-size-6">Charles手机和浏览器抓包</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/charles/">charles</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
-            <a href="/2019/08/25/mysql/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="mysql">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-25T12:49:59.000Z">2019-08-25</time></div>
-                    <a href="/2019/08/25/mysql/" class="has-link-black-ter is-size-6">mysql</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/mysql/">mysql</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -476,7 +520,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/tags/Charles/" style="font-size: 10px;">Charles</a> <a href="/tags/Pycharm/" style="font-size: 10px;">Pycharm</a> <a href="/tags/blogs/" style="font-size: 10px;">blogs</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/https/" style="font-size: 10px;">https</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/测试/" style="font-size: 10px;">测试</a>
+        <a href="/tags/Charles/" style="font-size: 10px;">Charles</a> <a href="/tags/Pycharm/" style="font-size: 10px;">Pycharm</a> <a href="/tags/app/" style="font-size: 10px;">app</a> <a href="/tags/blogs/" style="font-size: 10px;">blogs</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/https/" style="font-size: 10px;">https</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/公众号/" style="font-size: 10px;">公众号</a> <a href="/tags/测试/" style="font-size: 20px;">测试</a>
     </div>
 </div>
 
@@ -495,7 +539,7 @@
                     <span class="level-item">September 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">2</span>
+                    <span class="level-item tag">4</span>
                 </span>
             </a>
         </li>
@@ -534,6 +578,13 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Pycharm/">
                         <span class="tag">Pycharm</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/app/">
+                        <span class="tag">app</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -588,9 +639,16 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/公众号/">
+                        <span class="tag">公众号</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/测试/">
                         <span class="tag">测试</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
@@ -655,7 +713,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/tags/Charles/" style="font-size: 10px;">Charles</a> <a href="/tags/Pycharm/" style="font-size: 10px;">Pycharm</a> <a href="/tags/blogs/" style="font-size: 10px;">blogs</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/https/" style="font-size: 10px;">https</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/测试/" style="font-size: 10px;">测试</a>
+        <a href="/tags/Charles/" style="font-size: 10px;">Charles</a> <a href="/tags/Pycharm/" style="font-size: 10px;">Pycharm</a> <a href="/tags/app/" style="font-size: 10px;">app</a> <a href="/tags/blogs/" style="font-size: 10px;">blogs</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/https/" style="font-size: 10px;">https</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/公众号/" style="font-size: 10px;">公众号</a> <a href="/tags/测试/" style="font-size: 20px;">测试</a>
     </div>
 </div>
 
@@ -674,7 +732,7 @@
                     <span class="level-item">September 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">2</span>
+                    <span class="level-item tag">4</span>
                 </span>
             </a>
         </li>
@@ -713,6 +771,13 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/Pycharm/">
                         <span class="tag">Pycharm</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
+                    <a class="tags has-addons" href="/tags/app/">
+                        <span class="tag">app</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -767,9 +832,16 @@
                 </div>
                 
                 <div class="control">
+                    <a class="tags has-addons" href="/tags/公众号/">
+                        <span class="tag">公众号</span>
+                        <span class="tag is-grey">1</span>
+                    </a>
+                </div>
+                
+                <div class="control">
                     <a class="tags has-addons" href="/tags/测试/">
                         <span class="tag">测试</span>
-                        <span class="tag is-grey">1</span>
+                        <span class="tag is-grey">2</span>
                     </a>
                 </div>
                 
