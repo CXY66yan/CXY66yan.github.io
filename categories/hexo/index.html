@@ -163,7 +163,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    a minute read (About 121 words)
+                    3 minutes read (About 432 words)
                 </span>
                 
                 
@@ -177,7 +177,23 @@
         </h1>
         <div class="content">
             <p>[TOC]</p>
-<p>#如何在hexo新建文件并上传至博客<br>1.首先打开终端，切换到_posts文件所在路径，hexo new 文件名（新建一个.md文件）<br>2.以markdown的形式打开进行编辑，完成之后在终端中输入：hexo generate，回车，生成静态页面<br>3.再输入：hexo server，回车，到localhost:4000预览博客效果<br>4.最后输入：hexo deploy，回车，同步到github上去就行了。</p>
+<p>#如何在hexo新建文件并上传至博客<br>1.首先打开终端，切换到_posts文件所在路径，hexo new 文件名（新建一个.md文件）<br>2.以markdown的形式打开进行编辑，完成之后在终端中输入：hexo generate，回车，生成静态页面<br>3.再输入：hexo server，回车，到localhost:4000预览博客效果<br>4.最后输入：hexo deploy，回车，同步到github上去就行了。<br>如何判断一个是问题是前端还是后端？</p>
+<p>后端问题：</p>
+<p>1.观察日志，有明确的exception(终端查看日志的命令：tail -f)</p>
+<p>2.接口报500</p>
+<p>3.返回的报文不符合接口文档，参数是否区分大小写，字母拼音错误，int或者string与接口文档不一致。 4.返回的值前端识别不了，协商后，后台配合扩充字段满足的前端需求</p>
+<p>5.应该返回0条记录的，但是返回了全部，应该返回1条记录的，但是返回了多条记录</p>
+<p>6.应该返回有序的数据，但是返回了无序的数据</p>
+<p>7.页面结果不正确（没页数，第一页，第二页，第三页）</p>
+<p>前端问题：</p>
+<p>界面问题：贴图错误，文字错误，样式错误 功能问题：请求接口的url错误，http中的请求参数错误</p>
+<p>Html:文字，页面的跳转</p>
+<p>css:样式，比如排版，布局，颜色，背景</p>
+<p>Js:负责行为，交互类的问题</p>
+<p>B端：浏览器端</p>
+<p>C端：客户端</p>
+<p>客户端：安卓，iOS</p>
+<p>h5:是一个页面</p>
 
         </div>
         
@@ -236,7 +252,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        12
+                        11
                     </p>
                 </div>
             </div>
@@ -256,7 +272,7 @@
                         Tags
                     </p>
                     <p class="title has-text-weight-normal">
-                        23
+                        21
                     </p>
                 </div>
             </div>
@@ -368,7 +384,7 @@
                 <span class="level-item">前后端</span>
             </span>
             <span class="level-end">
-                <span class="level-item tag">2</span>
+                <span class="level-item tag">1</span>
             </span>
         </a></li><li>
         <a class="level is-marginless" href="/categories/手工测试-接口测试/">
@@ -439,25 +455,6 @@
         
         <article class="media">
             
-            <a href="/2019/10/07/如何判断一个问题是前端还是后端/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/images/thumbnail.svg" alt="如何判断一个问题是前端还是后端">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-10-07T04:06:36.000Z">2019-10-07</time></div>
-                    <a href="/2019/10/07/如何判断一个问题是前端还是后端/" class="has-link-black-ter is-size-6">如何判断一个问题是前端还是后端</a>
-                    <p class="is-size-7 is-uppercase">
-                        <a class="has-link-grey -link" href="/categories/前后端/">前后端</a>
-                    </p>
-                </div>
-            </div>
-        </article>
-        
-        <article class="media">
-            
             <a href="/2019/09/20/敏捷开发/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/images/thumbnail.svg" alt="敏捷开发">
@@ -494,6 +491,25 @@
             </div>
         </article>
         
+        <article class="media">
+            
+            <a href="/2019/09/03/app测试/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/images/thumbnail.svg" alt="app测试">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-09-03T07:54:39.000Z">2019-09-03</time></div>
+                    <a href="/2019/09/03/app测试/" class="has-link-black-ter is-size-6">app测试</a>
+                    <p class="is-size-7 is-uppercase">
+                        <a class="has-link-grey -link" href="/categories/移动端兼容性测试/">移动端兼容性测试</a>
+                    </p>
+                </div>
+            </div>
+        </article>
+        
     </div>
 </div>
 
@@ -507,7 +523,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/tags/B端/" style="font-size: 10px;">B端</a> <a href="/tags/Charles/" style="font-size: 10px;">Charles</a> <a href="/tags/C端/" style="font-size: 10px;">C端</a> <a href="/tags/Pycharm/" style="font-size: 10px;">Pycharm</a> <a href="/tags/Yapi/" style="font-size: 10px;">Yapi</a> <a href="/tags/app/" style="font-size: 10px;">app</a> <a href="/tags/blogs/" style="font-size: 10px;">blogs</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/h5/" style="font-size: 20px;">h5</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/https/" style="font-size: 10px;">https</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/公众号/" style="font-size: 10px;">公众号</a> <a href="/tags/前端/" style="font-size: 20px;">前端</a> <a href="/tags/后端/" style="font-size: 20px;">后端</a> <a href="/tags/客户端/" style="font-size: 10px;">客户端</a> <a href="/tags/打断点/" style="font-size: 10px;">打断点</a> <a href="/tags/接口测试/" style="font-size: 10px;">接口测试</a> <a href="/tags/敏捷开发/" style="font-size: 10px;">敏捷开发</a> <a href="/tags/测试/" style="font-size: 20px;">测试</a> <a href="/tags/激活/" style="font-size: 10px;">激活</a>
+        <a href="/tags/Charles/" style="font-size: 10px;">Charles</a> <a href="/tags/Pycharm/" style="font-size: 10px;">Pycharm</a> <a href="/tags/Yapi/" style="font-size: 10px;">Yapi</a> <a href="/tags/app/" style="font-size: 10px;">app</a> <a href="/tags/blogs/" style="font-size: 10px;">blogs</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/h5/" style="font-size: 10px;">h5</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/https/" style="font-size: 10px;">https</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/公众号/" style="font-size: 10px;">公众号</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/后端/" style="font-size: 10px;">后端</a> <a href="/tags/客户端/" style="font-size: 10px;">客户端</a> <a href="/tags/打断点/" style="font-size: 10px;">打断点</a> <a href="/tags/接口测试/" style="font-size: 10px;">接口测试</a> <a href="/tags/敏捷开发/" style="font-size: 10px;">敏捷开发</a> <a href="/tags/测试/" style="font-size: 20px;">测试</a> <a href="/tags/激活/" style="font-size: 10px;">激活</a>
     </div>
 </div>
 
@@ -526,7 +542,7 @@
                     <span class="level-item">October 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">3</span>
+                    <span class="level-item tag">2</span>
                 </span>
             </a>
         </li>
@@ -567,22 +583,8 @@
             <div class="field is-grouped is-grouped-multiline">
                 
                 <div class="control">
-                    <a class="tags has-addons" href="/tags/B端/">
-                        <span class="tag">B端</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
                     <a class="tags has-addons" href="/tags/Charles/">
                         <span class="tag">Charles</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/C端/">
-                        <span class="tag">C端</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -625,7 +627,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/h5/">
                         <span class="tag">h5</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
@@ -674,14 +676,14 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/前端/">
                         <span class="tag">前端</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/后端/">
                         <span class="tag">后端</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
@@ -788,7 +790,7 @@
         <h3 class="menu-label">
             Tag Cloud
         </h3>
-        <a href="/tags/B端/" style="font-size: 10px;">B端</a> <a href="/tags/Charles/" style="font-size: 10px;">Charles</a> <a href="/tags/C端/" style="font-size: 10px;">C端</a> <a href="/tags/Pycharm/" style="font-size: 10px;">Pycharm</a> <a href="/tags/Yapi/" style="font-size: 10px;">Yapi</a> <a href="/tags/app/" style="font-size: 10px;">app</a> <a href="/tags/blogs/" style="font-size: 10px;">blogs</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/h5/" style="font-size: 20px;">h5</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/https/" style="font-size: 10px;">https</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/公众号/" style="font-size: 10px;">公众号</a> <a href="/tags/前端/" style="font-size: 20px;">前端</a> <a href="/tags/后端/" style="font-size: 20px;">后端</a> <a href="/tags/客户端/" style="font-size: 10px;">客户端</a> <a href="/tags/打断点/" style="font-size: 10px;">打断点</a> <a href="/tags/接口测试/" style="font-size: 10px;">接口测试</a> <a href="/tags/敏捷开发/" style="font-size: 10px;">敏捷开发</a> <a href="/tags/测试/" style="font-size: 20px;">测试</a> <a href="/tags/激活/" style="font-size: 10px;">激活</a>
+        <a href="/tags/Charles/" style="font-size: 10px;">Charles</a> <a href="/tags/Pycharm/" style="font-size: 10px;">Pycharm</a> <a href="/tags/Yapi/" style="font-size: 10px;">Yapi</a> <a href="/tags/app/" style="font-size: 10px;">app</a> <a href="/tags/blogs/" style="font-size: 10px;">blogs</a> <a href="/tags/bug/" style="font-size: 10px;">bug</a> <a href="/tags/h5/" style="font-size: 10px;">h5</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/https/" style="font-size: 10px;">https</a> <a href="/tags/mac/" style="font-size: 10px;">mac</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/公众号/" style="font-size: 10px;">公众号</a> <a href="/tags/前端/" style="font-size: 10px;">前端</a> <a href="/tags/后端/" style="font-size: 10px;">后端</a> <a href="/tags/客户端/" style="font-size: 10px;">客户端</a> <a href="/tags/打断点/" style="font-size: 10px;">打断点</a> <a href="/tags/接口测试/" style="font-size: 10px;">接口测试</a> <a href="/tags/敏捷开发/" style="font-size: 10px;">敏捷开发</a> <a href="/tags/测试/" style="font-size: 20px;">测试</a> <a href="/tags/激活/" style="font-size: 10px;">激活</a>
     </div>
 </div>
 
@@ -807,7 +809,7 @@
                     <span class="level-item">October 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">3</span>
+                    <span class="level-item tag">2</span>
                 </span>
             </a>
         </li>
@@ -848,22 +850,8 @@
             <div class="field is-grouped is-grouped-multiline">
                 
                 <div class="control">
-                    <a class="tags has-addons" href="/tags/B端/">
-                        <span class="tag">B端</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
                     <a class="tags has-addons" href="/tags/Charles/">
                         <span class="tag">Charles</span>
-                        <span class="tag is-grey">1</span>
-                    </a>
-                </div>
-                
-                <div class="control">
-                    <a class="tags has-addons" href="/tags/C端/">
-                        <span class="tag">C端</span>
                         <span class="tag is-grey">1</span>
                     </a>
                 </div>
@@ -906,7 +894,7 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/h5/">
                         <span class="tag">h5</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
@@ -955,14 +943,14 @@
                 <div class="control">
                     <a class="tags has-addons" href="/tags/前端/">
                         <span class="tag">前端</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
                 <div class="control">
                     <a class="tags has-addons" href="/tags/后端/">
                         <span class="tag">后端</span>
-                        <span class="tag is-grey">2</span>
+                        <span class="tag is-grey">1</span>
                     </a>
                 </div>
                 
