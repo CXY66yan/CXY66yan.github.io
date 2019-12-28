@@ -133,6 +133,96 @@
     
     
     <div class="col-12 col-md-8 m-auto">
+      <a href="/2019/08/27/blogs/">
+        <p class="h4 index-header">blogs</p>
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">[TOC]
+#如何在hexo新建文件并上传至博客1.首先打开终端，切换到_posts文件所在路径，hexo new 文件名（新建一个.md文件）
+2.以Typora的形式打开进行编辑，完成之后在终端中输入：hexo generate，回车，生成静态页面
+3.再输入：hexo server，回车，到localhost:4000预览博客效果
+4.最后输入：hexo deploy，回车，同步到github上去就行了
+</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-08-27&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/hexo">hexo</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/blogs">blogs</a>&nbsp;
+          
+            <a href="/tags/hexo">hexo</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2019/08/27/Charles/">
+        <p class="h4 index-header">Charles手机和浏览器抓包</p>
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">charles 浏览器和手机抓包@(charles)[http|https][TOC]
+##http手机抓包操作步骤
+1打开Charles，点击proxy-点击Mac OS x proxy取消前面的对勾，对勾保存是电脑抓包-点击proxy setting-在enable transparent http proxy 前面打对勾然后点击ok-点击设置保证跟电脑连接的是同一个局域网点击链接的wifi-选择手动-输入服务器的IP（安装了Charles的电脑的IP地址，可在Charles-help-local IP adress中查看）和端口号-点击Charles（⭕️）开始录制按钮，手机这边操作就可以开始抓包了；
+
+##Charles Android/ios手机抓https协议
+1234561.电脑端打开Charles-help-ssl proxying-install Charles root certificate2.下载安装证书，默认路径不需要更改，在钥匙串访问中选择证书双击证书文件-选择始始终信任3.电脑端打开Charles-help-ssl proxying-install Cha</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-08-27&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/charles">charles</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/Charles">Charles</a>&nbsp;
+          
+            <a href="/tags/http">http</a>&nbsp;
+          
+            <a href="/tags/https">https</a>&nbsp;
+          
+            <a href="/tags/%E6%BF%80%E6%B4%BB">激活</a>&nbsp;
+          
+            <a href="/tags/%E6%89%93%E6%96%AD%E7%82%B9">打断点</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
       <a href="/2019/08/25/mysql/">
         <p class="h4 index-header">mysql</p>
         
@@ -140,7 +230,9 @@
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1">mysql忘记密码解决方法mysql 解决忘记密码问题
+          <div class="index-text mb-1">[TOC]
+#查
+mysql忘记密码解决方法mysql 解决忘记密码问题
 mac下mysql 1045 (28000): Access denied for user ‘root’@’localhost’ (using password:
 新入了mac pro，安装好mysql后，用终端进入mysql遇到个问题： 1045 (28000): Access denied for user ‘root’@’localhost’ (using password: N
 讲道理，我还设密码呢，但是第一次进来就报错，goo了一下大概原因可能是mysql创建的时候给自动分配了密码。
@@ -153,7 +245,7 @@ sudo /usr/local/mysql/support-files/mysql.server stop
 
 或者在系统偏好设置中关闭MySQL服务(如果电脑有设置密码的，此处会要求输入计算机密码)
 2.去mysql文件夹里设置跳过验证（3步）
-12345678910先进入mysql文件夹：cd /usr/local/mysq</div>
+12345678910先进入mysql文件夹：cd /usr/l</div>
         </div>
       </a>
 
@@ -172,7 +264,15 @@ sudo /usr/local/mysql/support-files/mysql.server stop
           
             <a href="/tags/mysql">mysql</a>&nbsp;
           
-            <a href="/tags/bug">bug</a>&nbsp;
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5">数据库的增删改查</a>&nbsp;
+          
+            <a href="/tags/%E5%AD%90%E6%9F%A5%E8%AF%A2">子查询</a>&nbsp;
+          
+            <a href="/tags/%E5%B7%A6%E8%BF%9E%E6%8E%A5">左连接</a>&nbsp;
+          
+            <a href="/tags/%E5%8F%B3%E8%BF%9E%E6%8E%A5">右连接</a>&nbsp;
+          
+            <a href="/tags/%E5%86%85%E8%BF%9E%E6%8E%A5">内连接</a>&nbsp;
           
         
       </div>
@@ -183,14 +283,36 @@ sudo /usr/local/mysql/support-files/mysql.server stop
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/08/25/linux命令总结/">
-        <p class="h4 index-header">linux命令总结</p>
+      <a href="/2019/08/25/linux命令/">
+        <p class="h4 index-header">linux命令</p>
         
         
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1">常用快捷键123456789101112131415161718192021苹果手机截屏键：关机键+home键小米手机的截屏：右边音量下键+屏幕上的三个横线同时摁；Vivo手机截屏：右侧手机电源键+音量下键OPPO手机截屏：三指往下滑；PMO(Project Management Office)一般称为项目管理办公室、项目管理中心或者项目管理部，是在组织内部将实践、过程、运作形式化和标准化，同时在组织内各机能间，为推动专案前进产生各种工作资源冲突时，负责协调整合的机能，所以是为了提高组织管理成熟度的核心部门，它根据业界最佳实践和公认的项目管理知识体系（PMBOK），并结合企业自身的业务和行业特点，为组织量身定制项目管理流程、培养项目经理团队、建立项目管理信息系统、对项目提供顾问式指导、开展多项目管理等，以此确保项目成功率的提高和组织战略的有效贯彻和执行。MVP的全称为Model-View-Presenter，Model提供数据，View负责显示，Presenter负责逻辑的处理。Mac电脑Chrome浏览器开发者工具的快捷键：开发者工具：option＋command＋ijavascri</div>
+          <div class="index-text mb-1">[TOC]
+#操作系统及其分类
+####操作系统
+负责协调硬件设备和软件资源的系统软件
+#####桌面操作系统
+windows界面化
+macOS
+Linux
+#####服务器操作系统
+Linux （安全 稳定 免费）
+Windows  server （付费）
+#####嵌入式操作系统
+Linux
+移动设备操作系统Android
+iOS
+Linux版本Linux内核版本稳定版
+发行版
+Linux发行版本Ubuntu
+Centos
+Redhat
+Linux和Windows的区别windows通过盘符（C/D/E盘）管理文件和目录而Linux没有盘符的概念，所有的文件和目录都在根目录下（/）
+Linux命令大全##Linux常用的几个基本命令
+123456789101112131415161718192021222324252627282930313233343536ls 查看文件夹下的内容ls -a :显示所有文件包含隐藏文件ls  -l :显示文件的所有详细信息ls -lh :人性化显示文件大小ls -alh :查看某个文件下的所有文件包含隐藏文件并显示文件的详细信息，文件大小人性化显示</div>
         </div>
       </a>
 
@@ -199,6 +321,20 @@ sudo /usr/local/mysql/support-files/mysql.server stop
           <i class="iconfont icon-riqi2"></i>&nbsp;2019-08-25&nbsp;&nbsp;
         
         
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/linux">linux</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E6%B5%8B%E8%AF%95">测试</a>&nbsp;
+          
+            <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F">操作系统</a>&nbsp;
+          
+            <a href="/tags/linux">linux</a>&nbsp;
+          
         
       </div>
     </div>
