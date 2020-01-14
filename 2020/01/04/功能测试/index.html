@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content>
+  <meta name="author" content="陈孝艳">
+  <meta name="keywords" content>
+  <title>功能测试.md ~ missyan的博客</title>
+
+  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css">
+<link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+
+  <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css">
+
+
+</head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>missyan的博客</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">Archives</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">Categories</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">Tags</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">About</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+</nav>
+
+    <div class="view intro-2" id="background"
+         style="background: url('/img/default.png')no-repeat center center;
+           background-size: cover;
+           background-attachment: fixed;">
+      <div class="full-bg-img">
+        <div class="mask rgba-black-light flex-center">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  Saturday, January 4th 2020, 4:14 pm
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    1.2k 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      4 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <hr>
+<p>[TOC]</p>
+<h2 id="测试理论"><a href="#测试理论" class="headerlink" title="测试理论"></a>测试理论</h2><h3 id="软件开发模型"><a href="#软件开发模型" class="headerlink" title="软件开发模型"></a>软件开发模型</h3><h4 id="瀑布模型"><a href="#瀑布模型" class="headerlink" title="瀑布模型"></a>瀑布模型</h4><p><strong>模型：</strong>需求分析-概要设计-详细设计-编码-软件测试-软件维护</p>
+<p><strong>优点：</strong>线性模型，是其他模型的基础，文档驱动；开发的各个阶段比较清晰，当前阶段完成之后只需关注后续阶段</p>
+<p><strong>缺点：</strong>风险后延，不适应需求的变化</p>
+<h4 id="快速原型"><a href="#快速原型" class="headerlink" title="快速原型"></a>快速原型</h4><p><strong>模型：</strong>快速分析-构造-运行-评价-快速分析-构造-运行-评价-快速分析…</p>
+<p><strong>特点：</strong>在开发真实系统之前先构造一个原型，在该原型的基础上，逐渐完成整个系统的开发工作</p>
+<p><strong>优点：</strong>支持用户参与，适应需求变化，减少由于需求不明带来的项目开发风险</p>
+<p>####螺旋模型</p>
+<p><strong>优点：</strong>引进了风险分析活动</p>
+<p><strong>缺点：</strong>需要丰富的风险评估经验和专业知识</p>
+<h3 id="软件测试模型"><a href="#软件测试模型" class="headerlink" title="软件测试模型"></a>软件测试模型</h3><p>####v模型</p>
+<p><strong>示意图：</strong>需求分析-概要设计-详细设计-编码-单元测试-集成测试-系统测试-验收测试</p>
+<p><strong>缺点：</strong>返工量大，灵活性比较低</p>
+<h4 id="w模型"><a href="#w模型" class="headerlink" title="w模型"></a>w模型</h4><p><strong>示意图：</strong>需求分析（验收/系统测试设计）-概要设计（集成测试设计）-详细设计（单元测试设计）-编码（单元测试）-集成（集成测试）-实施（系统测试）-交付（验收测试）</p>
+<p><strong>优点：</strong>测试伴随着整个软件的开发周期，早介入，早发现，早修复且不仅对程序，文档和设计也进行测试</p>
+<p>####H模型</p>
+<p><strong>示意图：</strong>测试准备-测试就绪点-测试执行</p>
+<h2 id="软件测试的分类"><a href="#软件测试的分类" class="headerlink" title="软件测试的分类"></a>软件测试的分类</h2><h3 id="按阶段划分"><a href="#按阶段划分" class="headerlink" title="按阶段划分"></a>按阶段划分</h3><p><strong>单元测试：</strong>针对软件设计中的最小单位-程序模块，进行正确性检查的测试工作</p>
+<p><strong>集成测试：</strong>在单元测试的基础上，将所有程序模块进行有序的递增的测试，重点测试不同模块的接口部分</p>
+<p><strong>系统测试：</strong>将整个软件系统看作一个整体进行测试，测试的依据是软件需求文档</p>
+<p><strong>验收测试：</strong>检验软件是否符合用户需求的测试</p>
+<p>​    α测试：内部版本，软件开发者内部交流，该版本软件bug较多，普通用户最好不要安装</p>
+<p>​    β 测试：公测版本，对所有用户开放的测试版本 ，软件公司免费发布，用户从相关网站上下载，通过一些专业爱好者的测试，将问题反馈给开发者，开发者进行有针对性的修改</p>
+<p>​    γ测试：软件版本正式发行的候选版本，该版本已经相当成熟了与即将发布的正式版本相差无几，成为正式发布的候选版本</p>
+<h3 id="按是否查看源代码"><a href="#按是否查看源代码" class="headerlink" title="按是否查看源代码"></a>按是否查看源代码</h3><p><strong>黑盒测试:</strong>完全不考虑程序内部结构和内部特性，注重于测试软件的功能需求，只关心软件的输入数据和输出数据</p>
+<p>​    ‘功能测试’：逻辑功能测试，界面测试，安装测试</p>
+<p>​    ‘性能测试’：时间性能，稳定性测试，负载测试，压力测试</p>
+<p><strong>白盒测试：</strong>看源代码和程序结构</p>
+<p><strong>灰盒测试：</strong>介于白盒测试和黑盒测试之间，灰盒测试多用户集成测试阶段，不仅考虑输入和输出还关注程序内部的情况</p>
+<h3 id="按是否运行"><a href="#按是否运行" class="headerlink" title="按是否运行"></a>按是否运行</h3><p><strong>静态测试：</strong>不实际运行被测软件，而只是静态的检查程序代码，界面或文档中可能存在的错误过程</p>
+<p><strong>动态测试：</strong>实际运行被测程序，输入相应的测试数据检查实际输出结果和预期结果是否相符的过程</p>
+<h3 id="按是否自动化"><a href="#按是否自动化" class="headerlink" title="按是否自动化"></a>按是否自动化</h3><p><strong>人工测试/手工测试</strong>：测试人员手动去进行的测试</p>
+<p><strong>自动化测试：</strong>利用代码或工具帮助人工进行测试</p>
+<h3 id="软件测试的其他分类"><a href="#软件测试的其他分类" class="headerlink" title="软件测试的其他分类"></a>软件测试的其他分类</h3><p><strong>冒烟测试：</strong>对系统进行最基本功能的测试，保证基本的功能和流程能走通</p>
+<p><strong>回归测试：</strong>当修复一个bug后，把之前的测试用例在新的代码下进行再次测试</p>
+<p><strong>随机测试：</strong>主要是对被测软件的一些重要功能进行复测，也包括测试哪些当前测试用例没有覆盖到的部分</p>
+<p><strong>探索性测试：</strong>同时设计测试和执行测试，测试人员通过测试不断学习被测系统</p>
+<h2 id="测试用例"><a href="#测试用例" class="headerlink" title="测试用例"></a>测试用例</h2><p>定义：为特定的目的而设计的一组测试输入，执行条件和预期结果的文档</p>
+<h3 id="测试用例的8大要素"><a href="#测试用例的8大要素" class="headerlink" title="测试用例的8大要素"></a>测试用例的8大要素</h3><p>用例编号，用例标题，测试项目，用例级别，预置条件，测试输入，执行步骤，预期结果</p>
+<h3 id="测试用例设计方法"><a href="#测试用例设计方法" class="headerlink" title="测试用例设计方法"></a>测试用例设计方法</h3><p>等价类划分法</p>
+<p>​    有效等价类（满足需求）：</p>
+<p>​    无效等价类（不满足需求）：</p>
+
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95">功能测试</a>
+                
+                  <a class="hover-with-bg" href="/tags/%E5%BC%80%E5%8F%91%E6%A8%A1%E5%9E%8B">开发模型</a>
+                
+                  <a class="hover-with-bg" href="/tags/%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%9E%8B">测试模型</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;TOC</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+  </div>
+</div>
+
+    
+  </main>
+
+  
+    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
+      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+    <br>
+
+    
+  
+    <!-- 不蒜子统计PV -->
+    
+    &nbsp;<span id="busuanzi_container_site_pv">总访问量 
+          <span id="busuanzi_value_site_pv"></span> 次</span>&nbsp;
+  
+  
+    <!-- 不蒜子统计UV -->
+    
+    &nbsp;<span id="busuanzi_container_site_uv">总访客数 
+            <span id="busuanzi_value_site_uv"></span> 人</span>&nbsp;
+  
+  <br>
+
+
+
+    
+
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="/lib/jquery/jquery.min.js" ></script>
+<script src="/lib/popper/popper.min.js" ></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js" ></script>
+<script src="/lib/mdbootstrap/js/mdb.min.js" ></script>
+<script src="/js/main.js" ></script>
+
+
+  <script src="/js/lazyload.js" ></script>
+
+
+
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
+
+
+  <script src="/lib/smooth-scroll/smooth-scroll.min.js" ></script>
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+<!-- Plugins -->
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+  <script src="/lib/prettify/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').addClass('prettyprint  linenums');
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script src="/lib/typed/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "功能测试.md&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script src="/lib/anchor/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "false",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script src="/lib/fancybox/jquery.fancybox.min.js" ></script>
+  <script>
+    $("#post img:not(.no-zoom img, img[no-zoom])").each(
+      function () {
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "images");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+</body>
+</html>
