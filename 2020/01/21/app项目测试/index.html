@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content>
+  <meta name="author" content="陈孝艳">
+  <meta name="keywords" content>
+  <title>app项目测试 ~ missyan的博客</title>
+
+  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css">
+<link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+
+  <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css">
+
+
+</head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>missyan的博客</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">Archives</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">Categories</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">Tags</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">About</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+</nav>
+
+    <div class="view intro-2" id="background"
+         style="background: url('/img/default.png')no-repeat center center;
+           background-size: cover;
+           background-attachment: fixed;">
+      <div class="full-bg-img">
+        <div class="mask rgba-black-light flex-center">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  Tuesday, January 21st 2020, 3:19 pm
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    4.6k 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      16 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <p>[TOC]</p>
+<h2 id="app项目功能测试"><a href="#app项目功能测试" class="headerlink" title="app项目功能测试"></a>app项目功能测试</h2><h3 id="运行测试"><a href="#运行测试" class="headerlink" title="运行测试"></a>运行测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">运行</span><br><span class="line"></span><br><span class="line"><span class="number">1</span>）App安装完成后的试运行，可正常打开软件。</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>）App打开测试，是否有加载状态进度提示。</span><br><span class="line"></span><br><span class="line"><span class="number">3</span>）App打开速度测试，速度是否可观。</span><br><span class="line"></span><br><span class="line"><span class="number">4</span>）App页面间的切换是否流畅，逻辑是否正确</span><br></pre></td></tr></table></figure>
+
+<h3 id="注册测试"><a href="#注册测试" class="headerlink" title="注册测试"></a>注册测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">注册</span><br><span class="line"></span><br><span class="line">--同表单编辑页面</span><br><span class="line"></span><br><span class="line">--用户名密码长度</span><br><span class="line"></span><br><span class="line">--注册后的提示页面</span><br><span class="line"></span><br><span class="line">--前台注册页面和后台的管理页面数据是否一致</span><br><span class="line"></span><br><span class="line">--注册后，在后台管理中页面提示</span><br></pre></td></tr></table></figure>
+
+<h3 id="登录测试"><a href="#登录测试" class="headerlink" title="登录测试"></a>登录测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">登录</span><br><span class="line"></span><br><span class="line">--使用合法的用户登录系统。</span><br><span class="line"></span><br><span class="line">--系统是否允许多次非法的登陆，是否有次数限制。</span><br><span class="line"></span><br><span class="line">--使用已经登陆的账号登陆系统是否正确处理。</span><br><span class="line"></span><br><span class="line">--使用禁用的账号登陆系统是否正确处理。</span><br><span class="line"></span><br><span class="line">--用户名、口令（密码）错误或漏填时能否登陆。</span><br><span class="line"></span><br><span class="line">--删除或修改后的用户，原用户登陆。</span><br><span class="line"></span><br><span class="line">--不输入用户口令和用户、重复点（确定或取消按钮）是否允许登陆。</span><br><span class="line"></span><br><span class="line">--登陆后，页面中登陆信息。</span><br><span class="line"></span><br><span class="line">--页面中有注销按钮。</span><br><span class="line"></span><br><span class="line">--登陆超时的处理。</span><br></pre></td></tr></table></figure>
+
+<p>###注销测试</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">注销</span><br><span class="line"></span><br><span class="line">--注销原模块，新的模块系统能否正确处理。</span><br><span class="line"></span><br><span class="line">--终止注销能否返回原模块，原用户。</span><br><span class="line"></span><br><span class="line">--注销原用户，新用户系统能否正确处理。</span><br><span class="line"></span><br><span class="line">--使用错误的账号、口令、无权限的被禁用的账号进行注销</span><br></pre></td></tr></table></figure>
+
+<h3 id="前后台切换测试"><a href="#前后台切换测试" class="headerlink" title="前后台切换测试"></a>前后台切换测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>) APP切换到后台，再回到app，检查是否停留在上一次操作界面。</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>) APP切换到后台，再回到app，检查功能及应用状态是否正常，IOS4和IOS5的版本的处理机制有的不一样。 </span><br><span class="line"></span><br><span class="line"><span class="number">3</span>) app切换到后台，再回到前台时，注意程序是否崩溃，功能状态是否正常，尤其是对于从后台切换回前台数据有自动更新的时候。 </span><br><span class="line"></span><br><span class="line"><span class="number">4</span>) 手机锁屏解屏后进入app注意是否会崩溃，功能状态是否正常，尤其是对于从后台切换回前台数据有自动更新的时候。 </span><br><span class="line"></span><br><span class="line"><span class="number">5</span>) 当App使用过程中有电话进来中断后再切换到app，功能状态是否正常 </span><br><span class="line"></span><br><span class="line"><span class="number">6</span>) 当杀掉app进程后，再开启app，app能否正常启动。 </span><br><span class="line"></span><br><span class="line"><span class="number">7</span>) 出现必须处理的提示框后，切换到后台，再切换回来，检查提示框是否还存在，有时候会出现应用自动跳过提示框的缺陷。 </span><br><span class="line"></span><br><span class="line"><span class="number">8</span>) 对于有数据交换的页面，每个页面都必需要进行前后台切换、锁屏的测试，这种页面最容易出现崩溃。</span><br></pre></td></tr></table></figure>
+
+<h3 id="免登录测试"><a href="#免登录测试" class="headerlink" title="免登录测试"></a>免登录测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">很多应用提供免登录功能，当应用开启时自动以上一次登录的用户身份来使用app.</span><br><span class="line"></span><br><span class="line"><span class="number">1</span>) app有免登录功能时，需要考虑IOS版本差异。 </span><br><span class="line"></span><br><span class="line"><span class="number">2</span>) 考虑无网络情况时能否正常进入免登录状态。 </span><br><span class="line"></span><br><span class="line"><span class="number">3</span>) 切换用户登录后，要校验用户登录信息及数据内容是否相应更新，确保原用户退出。 </span><br><span class="line"></span><br><span class="line"><span class="number">4</span>) 根据MTOP的现有规则，一个帐户只允许登录一台机器。所以，需要检查一个帐户登录多台手机的情况。原手机里的用户需要被踢出，给出友好提示。 </span><br><span class="line"></span><br><span class="line"><span class="number">5</span>) app切换到后台，再切回前台的校验 </span><br><span class="line"></span><br><span class="line"><span class="number">6</span>) 切换到后台，再切换回前台的测试 </span><br><span class="line"></span><br><span class="line"><span class="number">7</span>) 密码更换后，检查有数据交换时是否进行了有效身份的校验 </span><br><span class="line"></span><br><span class="line"><span class="number">8</span>) 支持自动登录的应用在进行数据交换时，检查系统是否能自动登录成功并且数据操作无误。 </span><br><span class="line"></span><br><span class="line"><span class="number">9</span>) 检查用户主动退出登录后，下次启动app，应停留在登录界面</span><br></pre></td></tr></table></figure>
+
+<h3 id="数据更新测试"><a href="#数据更新测试" class="headerlink" title="数据更新测试"></a>数据更新测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">根据应用的业务规则，以及数据更新量的情况，来确定最优的数据更新方案。 </span><br><span class="line"></span><br><span class="line"><span class="number">1</span>) 需要确定哪些地方需要提供手动刷新，哪些地方需要自动刷新，哪些地方需要手动+自动刷新。 </span><br><span class="line"></span><br><span class="line"><span class="number">2</span>) 确定哪些地方从后台切换回前台时需要进行数据更新。 </span><br><span class="line"></span><br><span class="line"><span class="number">3</span>) 根据业务、速度及流量的合理分配，确定哪些内容需要实时更新，哪些需要定时更新。 </span><br><span class="line"></span><br><span class="line"><span class="number">4</span>) 确定数据展示部分的处理逻辑，是每次从服务端请求，还是有缓存到本地，这样才能有针对性的进行相应测试。 </span><br><span class="line"></span><br><span class="line"><span class="number">5</span>) 检查有数据交换的地方，均有相应的异常处理。</span><br></pre></td></tr></table></figure>
+
+<h3 id="离线浏览测试"><a href="#离线浏览测试" class="headerlink" title="离线浏览测试"></a>离线浏览测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">离线浏览 </span><br><span class="line"></span><br><span class="line">很多应用会支持离线浏览，即在本地客户端会缓存一部分数据供用户查看。 </span><br><span class="line"></span><br><span class="line"><span class="number">1</span>) 在无网络情况可以浏览本地数据 </span><br><span class="line"></span><br><span class="line"><span class="number">2</span>) 退出app再开启app时能正常浏览 </span><br><span class="line"></span><br><span class="line"><span class="number">3</span>) 切换到后台再切回前台可以正常浏览 </span><br><span class="line"></span><br><span class="line"><span class="number">4</span>) 锁屏后再解屏回到应用前台可以正常浏览 </span><br><span class="line"></span><br><span class="line"><span class="number">5</span>) 在对服务端的数据有更新时会给予离线的相应提示</span><br></pre></td></tr></table></figure>
+
+<h3 id="交叉事件测试"><a href="#交叉事件测试" class="headerlink" title="交叉事件测试"></a>交叉事件测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">针对智能终端应用的服务等级划分方式及实时特性所提出的测试方法。交叉测试又叫事件或冲突测试，是指一个功能正在执行过程中，同时另外一个事件或操作对该过程进行干扰的测试。如；App在前/后台运行状态时与来电、文件下载、音乐收听等关键运用的交互情况测试等。交叉事件测试非常重要，能发现很多应用中潜在的性能问题。</span><br><span class="line"></span><br><span class="line"><span class="number">1</span>） 多个App同时运行是否影响正常功能</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>） App运行时前/后台切换是否影响正常功能</span><br><span class="line"></span><br><span class="line"><span class="number">3</span>） App运行时拨打/接听电话</span><br><span class="line"></span><br><span class="line"><span class="number">4</span>） App运行时发送/接收信息</span><br><span class="line"></span><br><span class="line"><span class="number">5</span>） App运行时发送/收取邮件</span><br><span class="line"></span><br><span class="line"><span class="number">6</span>） App运行时切换网络（<span class="number">2</span>G、<span class="number">3</span>G、wifi）</span><br><span class="line"></span><br><span class="line"><span class="number">7</span>） App运行时浏览网络</span><br><span class="line"></span><br><span class="line"><span class="number">8</span>） App运行时使用蓝牙传送/接收数据</span><br><span class="line"></span><br><span class="line"><span class="number">9</span>） App运行时使用相机、计算器等手机自带设备</span><br></pre></td></tr></table></figure>
+
+<h3 id="兼容性测试"><a href="#兼容性测试" class="headerlink" title="兼容性测试"></a>兼容性测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">主要测试内部和外部兼容性</span><br><span class="line"></span><br><span class="line"><span class="number">1</span>）与本地及主流App是否兼容</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>）基于开发环境和生产环境的不同，检验在各种网络连接下(WiFi、<span class="number">2</span>G,<span class="number">3</span>G,<span class="number">4</span>G,<span class="number">5</span>G等)，App的数据和运用是否正确</span><br><span class="line"></span><br><span class="line"><span class="number">3</span>）与各种设备是否兼容，若有跨系统支持则需要检验是否在各系统下，各种行为是否一致</span><br><span class="line"></span><br><span class="line"> --不同操作系统的兼容性，是否适配</span><br><span class="line"></span><br><span class="line">--不同手机屏幕分辨率的兼容性</span><br><span class="line"></span><br><span class="line">--不同手机品牌的兼容性</span><br></pre></td></tr></table></figure>
+
+<h3 id="手势操作测试"><a href="#手势操作测试" class="headerlink" title="手势操作测试"></a>手势操作测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">手势操作测试</span><br><span class="line"></span><br><span class="line"><span class="number">1</span>）手机开锁屏对运行中的App的影响</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>）切换网络对运行中的App的影响</span><br><span class="line"></span><br><span class="line"><span class="number">3</span>）运行中的App前后台切换的影响</span><br><span class="line"></span><br><span class="line"><span class="number">4</span>）多个运行中的App的切换</span><br><span class="line"></span><br><span class="line"><span class="number">5</span>）App运行时关机</span><br></pre></td></tr></table></figure>
+
+<h3 id="UI测试"><a href="#UI测试" class="headerlink" title="UI测试"></a>UI测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">文案的测试（字体，字号，格式，规范，标题和正文，中英文换行，错别字，大小写，全半角标点）；</span><br><span class="line">图片的测试（清晰，尺寸，配色，风格）；布局的测试（尺寸大小，位置合理，排序规律，对齐方式）；</span><br><span class="line">控件的测试之对话框（状态：是否在对话框显示的同时可进行程序其他操作，位置：显示的位置是否在可视范围内，是否在屏幕中央；多个一级二级对话框并存时，层级关系是否正确；移动：是否可以移动对话框）；</span><br><span class="line">控件的测试之滑动滚轮（滚轮的触控区域，滚轮的数值限制，向上向下滑到极限值的处理，滚轮的对应跳转，日期滚轮，涉及到年月日的跳转，时间滚轮，涉及到<span class="number">24</span>小时和<span class="number">12</span>小时，上下午的跳转）；</span><br><span class="line">控件的测试之上下微调按钮（默认起始值，调整的变化值，最大值与最小值，输入数据后微调的值，输入的数据是否作有效性验证）；</span><br><span class="line">控件的测试之上下微调按钮（单选按钮：默认选项是否正确合理，选中其他选项，会自动取消当前选项，存在多个选项组时，选择其中一组的选项不会影响其他选项组；多选按钮：默认选项是否正确合理，选择其他选项不会影响当前选项；图标按钮：图标图片是否正确合适，点击图标时否调出对应页面，图标tooltip触发时机是否正确合理；默认形态：是否勾选，选项值的记忆）文本框（默认值：是否为空，是否有提示文案，边界值：长度限制，最多限制字符，超出屏幕上下方等超出限制的界面提示，显示，处理，跳转等；内容：前置/中置/后置空格内容，中文/英文/数字普通文本内容，引号/逗号特殊富豪内容，全角/半角内容，复制粘贴的内容，大小写全半角的内容，不符合格式的内容）</span><br></pre></td></tr></table></figure>
+
+<h3 id="消息通知测试"><a href="#消息通知测试" class="headerlink" title="消息通知测试"></a>消息通知测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">APP消息推送如何测试？</span><br><span class="line">消息推送对象</span><br><span class="line">消息推送一般可以自定义推送对象，有全部推送，精确推送，及安卓和IOS渠道推送，注意推送对象是否正确，推送之前确认自己是否在测试环境操作，以免造成生产问题。</span><br><span class="line"></span><br><span class="line">消息简介</span><br><span class="line">客户端收到消息推送有两种形式，客户端后台运行一般推送显示在通知栏，客户端前台运行一般弹出弹框，简介内容注意字数过多溢出情况。</span><br><span class="line"></span><br><span class="line">消息详情</span><br><span class="line">注意详情所支持的内容，包括文字、图片、表情包、换行以及链接跳转。</span><br><span class="line"></span><br><span class="line">消息推送场景（支持定时推送）</span><br><span class="line">（<span class="number">1</span>）消息推送时间：</span><br><span class="line">a)设置过去时间</span><br><span class="line">b)未推送之前修改消息内容</span><br><span class="line">c)删除消息，查看是否还会推送</span><br><span class="line">（<span class="number">2</span>）客户端运行状态</span><br><span class="line">a)前台运行</span><br><span class="line">b)后台运行</span><br><span class="line">c)进程关闭状态</span><br><span class="line">（<span class="number">2</span>）特殊场景</span><br><span class="line">a)多个提醒冲突</span><br><span class="line">b)当天设置当天推送</span><br><span class="line">c)当天设置隔几天起效</span><br><span class="line">如果用户设置不接收消息通知，看是否接到通知</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装卸载测试"><a href="#安装卸载测试" class="headerlink" title="安装卸载测试"></a>安装卸载测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br></pre></td><td class="code"><pre><span class="line">安装</span><br><span class="line"></span><br><span class="line"><span class="number">1.</span>正常安装测试，检查是否安装成功。</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span>APP版本覆盖测试。例如：先安装一个<span class="number">1.0</span>版本的APP,再安装一个高版本(<span class="number">1.1</span>版本)的APP，检查是否被覆盖。</span><br><span class="line"></span><br><span class="line"><span class="number">3.</span>回退版本测试。例如：先装一个<span class="number">2.0</span>版本的APP,再安装一个<span class="number">1.0</span>版本的APP,正常情况下版本是可以回退的。</span><br><span class="line"></span><br><span class="line"><span class="number">4.</span>安装时内存不足，弹出提示。</span><br><span class="line"></span><br><span class="line"><span class="number">5.</span>根据安装手册操作，是否正确安装。</span><br><span class="line"></span><br><span class="line"><span class="number">6.</span>安装过程中的意外情况（强行断电、断网、来电话了、查看信息）等等，检查会发生的情况。</span><br><span class="line"></span><br><span class="line"><span class="number">7.</span>通过‘同步软件’，检查安装时是否同步安装了一些文件。</span><br><span class="line"></span><br><span class="line"><span class="number">8.</span>在不同型号、系统、屏幕大小、分辨率上的手机进行安装。</span><br><span class="line"></span><br><span class="line"><span class="number">9.</span>安装时是否识别有SD卡，并默认安装到sd卡中。</span><br><span class="line"></span><br><span class="line"><span class="number">10.</span>安装完成后，能否正常启动应用程序。</span><br><span class="line"></span><br><span class="line"><span class="number">11.</span>安装完成后，重启手机能否正常启动应用程序。</span><br><span class="line"></span><br><span class="line"><span class="number">12.</span>安装完成后，是否对其他应用程序造成影响。</span><br><span class="line"></span><br><span class="line"><span class="number">13.</span>安装完成后，能否添加快捷方式。</span><br><span class="line"></span><br><span class="line"><span class="number">14.</span>安装完成后，杀毒软件是否会对其当做病毒处理。</span><br><span class="line"></span><br><span class="line"><span class="number">15.</span>多进程进行安装，是否安装成功。</span><br><span class="line"></span><br><span class="line"><span class="number">16.</span>在安装过程中，所有的提示信息必须是英文或者中文，提示信息中不能出现代码、符号、乱码等。</span><br><span class="line"></span><br><span class="line"><span class="number">17.</span>安装之后，是否自动启动程序。</span><br><span class="line"></span><br><span class="line"><span class="number">18.</span>是否支持第三方安装。</span><br><span class="line"></span><br><span class="line"><span class="number">19.</span>在安装中点击取消。</span><br><span class="line"></span><br><span class="line">卸载</span><br><span class="line"></span><br><span class="line"><span class="number">1.</span>用自己的卸载程序进行卸载，检查是否卸载干净。</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span>用第三方工具，检查是否卸载干净。</span><br><span class="line"></span><br><span class="line"><span class="number">3.</span>在卸载过程中，点击取消按钮，看是否正常退出卸载程序，检查软件是否还能继续正常使用。</span><br><span class="line"></span><br><span class="line"><span class="number">4.</span>卸载过程中，出现意外（比如手机关机，没电，查看信息，接打电话），程序是否还能运行。</span><br><span class="line"></span><br><span class="line"><span class="number">5.</span>在卸载过程中，突然重启设备，再次访问程序，是否还能运行。</span><br><span class="line"></span><br><span class="line"><span class="number">6.</span>在没用使用程序时，删除目录文件，看程序是否能运行。</span><br><span class="line"></span><br><span class="line"><span class="number">7.</span>在使用过程中，直接删除目录文件，程序是否还能运行。</span><br><span class="line"></span><br><span class="line"><span class="number">8.</span>不同系统、硬件环境、网络环境下进行卸载。</span><br><span class="line"></span><br><span class="line"><span class="number">9.</span>卸载成功后，是否对其他程序有影响。</span><br><span class="line"></span><br><span class="line"><span class="number">10.</span>卸载后再次安装，是否正常使用。</span><br><span class="line"></span><br><span class="line"><span class="number">11.</span>在卸载过程中，所有的提示信息必须是英文或者中文，提示信息中不能出现代码、符号、乱码等。</span><br></pre></td></tr></table></figure>
+
+<h3 id="升级更新测试"><a href="#升级更新测试" class="headerlink" title="升级更新测试"></a>升级更新测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">新版版发布后，配合不同网络环境的自劢更新提示及下载、安装、更新、启劢、运行的验证测试。  </span><br><span class="line">升级：</span><br><span class="line"><span class="number">1</span>）测试升级后的功能是否与需求说明一样</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>）测试与升级模块相关的模块的功能是否与需求一致</span><br><span class="line"></span><br><span class="line"><span class="number">3</span>）升级安装意外情况的测试（如死机、断电、重启）</span><br><span class="line"></span><br><span class="line"><span class="number">4</span>）升级界面的UI测试</span><br><span class="line"></span><br><span class="line"><span class="number">5</span>）不同操作系统间的升级测试</span><br><span class="line">更新：</span><br><span class="line"><span class="number">1</span>) 当客户端有新版本时，有更新提示。 </span><br><span class="line"></span><br><span class="line"><span class="number">2</span>) 当版本为非强制升级版时，用户可以取消更新，老版本能正常使用。用户在下次启动app时，仍能出现更新提示。 </span><br><span class="line"></span><br><span class="line"><span class="number">3</span>) 当版本为强制升级版时，当给出强制更新后用户没有做更新时，退出客户端。下次启动app时，仍出现强制升级提示。 </span><br><span class="line"></span><br><span class="line"><span class="number">4</span>) 当客户端有新版本时，在本地不删除客户端的情况下，直接更新检查是否能正常更新。</span><br><span class="line"></span><br><span class="line"><span class="number">5</span>) 当客户端有新版本时，在本地不删除客户端的情况下，检查更新后的客户端功能是否是新版本。 </span><br><span class="line"></span><br><span class="line"><span class="number">6</span>) 当客户端有新版本时，在本地不删除客户端的情况下，检查资源同名文件如图片是否能正常更新成最新版本。</span><br></pre></td></tr></table></figure>
+
+<h3 id="用户体验测试"><a href="#用户体验测试" class="headerlink" title="用户体验测试"></a>用户体验测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">以主观的普通消费者的角度去感知产品或服务的舒适、有用、易用、友好亲切程度。 通过不同个体、独立空间和非经验的统计复用方式去有效评价产品的体验特性提出修改意见提升产品的潜在客户满意度。</span><br><span class="line"></span><br><span class="line"><span class="number">1</span>）是否有空数据界面设计，引导用户去执行操作。</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>）是否滥用用户引导。</span><br><span class="line"></span><br><span class="line"><span class="number">3</span>）是否有不可点击的效果，如：你的按钮此时处于不可用状态，那么一定要灰掉，或者拿掉按钮，否则会给用户误导</span><br><span class="line"></span><br><span class="line"><span class="number">4</span>）菜单层次是否太深</span><br><span class="line"></span><br><span class="line"><span class="number">5</span>）交互流程分支是否太多</span><br><span class="line"></span><br><span class="line"><span class="number">6</span>）相关的选项是否离得很远</span><br><span class="line"></span><br><span class="line"><span class="number">7</span>）一次是否载入太多的数据</span><br><span class="line"></span><br><span class="line"><span class="number">8</span>）界面中按钮可点击范围是否适中</span><br><span class="line"></span><br><span class="line"><span class="number">9</span>）标签页是否跟内容没有从属关系，当切换标签的时候，内容跟着切换</span><br><span class="line"></span><br><span class="line"><span class="number">10</span>）操作应该有主次从属关系</span><br><span class="line"></span><br><span class="line"><span class="number">11</span>）是否定义Back的逻辑。涉及软硬件交互时，Back键应具体定义</span><br><span class="line"></span><br><span class="line"><span class="number">12</span>）是否有横屏模式的设计，应用一般需要支持横屏模式，即自适应设计</span><br></pre></td></tr></table></figure>
+
+<h3 id="回归测试"><a href="#回归测试" class="headerlink" title="回归测试"></a>回归测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>）Bug修复后且在新版本发布后需要进行回归测试。</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>）Bug修复后的回归测试在交付前、要进行全量用例的回归测试。</span><br></pre></td></tr></table></figure>
+
+<h3 id="性能测试"><a href="#性能测试" class="headerlink" title="性能测试"></a>性能测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">性能测试</span><br><span class="line"></span><br><span class="line">评估App的时间和空间特性 ：</span><br><span class="line"></span><br><span class="line"><span class="number">1</span>)极限测试：在各种边界压力情况下，如电池、存储、网速等，验证App是否能正确响应。</span><br><span class="line"></span><br><span class="line">--内存满时安装App</span><br><span class="line"></span><br><span class="line">--运行App时手机断电</span><br><span class="line"></span><br><span class="line">--运行App时断掉网络</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>)响应能力测试：测试App中的各类操作是否满足用户响应时间要求 。（安装包放到云测上可以测试）</span><br><span class="line"></span><br><span class="line">--App安装、卸载的响应时间</span><br><span class="line"></span><br><span class="line">--App各类功能性操作的影响时间</span><br><span class="line"></span><br><span class="line"><span class="number">3</span>)压力测试：反复/长期操作下、系统资源是否占用异常。（itestin）</span><br><span class="line"></span><br><span class="line">--App反复进行安装卸载，查看系统资源是否正常</span><br><span class="line"></span><br><span class="line">--其他功能反复进行操作，查看系统资源是否正常</span><br><span class="line"></span><br><span class="line"><span class="number">4</span>)性能评估：评估典型用户应用场景下，系统资源的使用情况。（Jmeter）</span><br></pre></td></tr></table></figure>
+
+<h3 id="时间测试"><a href="#时间测试" class="headerlink" title="时间测试"></a>时间测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">时间测试 </span><br><span class="line"></span><br><span class="line">客户端可以自行设置手机的时区、时间，因此需要校验该设置对app的影响。 </span><br><span class="line"></span><br><span class="line">--中国为东<span class="number">8</span>区，所以当手机设置的时间非东<span class="number">8</span>区时，查看需要显示时间的地方，时间是否展示正确，应用功能是否正常。时间一般需要根据服务器时间再转换成客户端对应的时区来展示，这样的用户体验比较好。比如发表一篇微博在服务端记录的是<span class="number">10</span>：<span class="number">00</span>，此时，华盛顿时间为<span class="number">22</span>：<span class="number">00</span>，客户端去浏览时，如果设置的是华盛顿时间,则显示的发表时间即为<span class="number">22</span>:<span class="number">00</span>,当时间设回东<span class="number">8</span>区时间时，再查看则显示为<span class="number">10</span>：<span class="number">00</span>。</span><br></pre></td></tr></table></figure>
+
+<h3 id="定位，照相机服务测试"><a href="#定位，照相机服务测试" class="headerlink" title="定位，照相机服务测试"></a>定位，照相机服务测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">定位、照相机服务 </span><br><span class="line"></span><br><span class="line"><span class="number">1</span>) App有用到相机，定位服务时，需要注意系统版本差异 </span><br><span class="line"></span><br><span class="line"><span class="number">2</span>) 有用到定位服务、照相机服务的地方，需要进行前后台的切换测试，检查应用是否正常。 </span><br><span class="line"></span><br><span class="line"><span class="number">3</span>) 当定位服务没有开启时，使用定位服务，会友好性弹出是否允许设置定位提示。当确定允许开启定位时，能自动跳转到定位设置中开启定位服务。 </span><br><span class="line"></span><br><span class="line"><span class="number">4</span>) 测试定位、照相机服务时，需要采用真机进行测试。</span><br></pre></td></tr></table></figure>
+
+
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/%E4%B8%9A%E5%8A%A1%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95">业务功能测试</a>
+                
+                  <a class="hover-with-bg" href="/tags/UI%E6%B5%8B%E8%AF%95">UI测试</a>
+                
+                  <a class="hover-with-bg" href="/tags/%E6%B6%88%E6%81%AF%E9%80%9A%E7%9F%A5%E6%B5%8B%E8%AF%95">消息通知测试</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;TOC</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+  </div>
+</div>
+
+    
+  </main>
+
+  
+    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
+      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+    <br>
+
+    
+  
+    <!-- 不蒜子统计PV -->
+    
+    &nbsp;<span id="busuanzi_container_site_pv">总访问量 
+          <span id="busuanzi_value_site_pv"></span> 次</span>&nbsp;
+  
+  
+    <!-- 不蒜子统计UV -->
+    
+    &nbsp;<span id="busuanzi_container_site_uv">总访客数 
+            <span id="busuanzi_value_site_uv"></span> 人</span>&nbsp;
+  
+  <br>
+
+
+
+    
+
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="/lib/jquery/jquery.min.js" ></script>
+<script src="/lib/popper/popper.min.js" ></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js" ></script>
+<script src="/lib/mdbootstrap/js/mdb.min.js" ></script>
+<script src="/js/main.js" ></script>
+
+
+  <script src="/js/lazyload.js" ></script>
+
+
+
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
+
+
+  <script src="/lib/smooth-scroll/smooth-scroll.min.js" ></script>
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+<!-- Plugins -->
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+  <script src="/lib/prettify/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').addClass('prettyprint  linenums');
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script src="/lib/typed/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "app项目测试&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script src="/lib/anchor/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "false",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script src="/lib/fancybox/jquery.fancybox.min.js" ></script>
+  <script>
+    $("#post img:not(.no-zoom img, img[no-zoom])").each(
+      function () {
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "images");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+</body>
+</html>
