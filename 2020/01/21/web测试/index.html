@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content>
+  <meta name="author" content="陈孝艳">
+  <meta name="keywords" content>
+  <title>web项目测试 ~ missyan的博客</title>
+
+  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css">
+<link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+
+  <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css">
+
+
+</head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>missyan的博客</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">Archives</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">Categories</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">Tags</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">About</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+</nav>
+
+    <div class="view intro-2" id="background"
+         style="background: url('/img/default.png')no-repeat center center;
+           background-size: cover;
+           background-attachment: fixed;">
+      <div class="full-bg-img">
+        <div class="mask rgba-black-light flex-center">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  Tuesday, January 21st 2020, 3:19 pm
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    2.4k 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      8 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <p>[TOC]</p>
+<p>##web项目测试</p>
+<h3 id="表单测试"><a href="#表单测试" class="headerlink" title="表单测试"></a>表单测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a、表单数据的字段、完整性及表单输入框的长度限制问题</span><br><span class="line"></span><br><span class="line">b、一些常理性逻辑验证，比如：出生日期和职业，工作年限是否恰当，所在地省份城市区域间的匹配等，如果设定使用默认值，也需要测试。</span><br></pre></td></tr></table></figure>
+
+<h3 id="导航测试"><a href="#导航测试" class="headerlink" title="导航测试"></a>导航测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">导航测试，就是在不同的页面跳转之间，或者按钮、对话框、列表以及窗口等，通过考虑这些因素去判断一个应用是否易于导航：是否直观？系统的主要模块是否可以通过主页访问或者到达？站点是否需要站内地图或者搜索引擎等其他帮助？web系统导航的另外一个重点就是页面结构、导航、菜单、风格等是否一致，确保用户可以凭借直觉或者简单的判断就可以找到自己想要的内容。（参考博客http://www.cnblogs.com/imyalost/p/<span class="number">5622867.</span>html）</span><br></pre></td></tr></table></figure>
+
+<h3 id="UI测试"><a href="#UI测试" class="headerlink" title="UI测试"></a>UI测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">UI测试，其中包括图片、动画、边框、颜色、字体、背景、按钮等等。</span><br><span class="line"></span><br><span class="line">a、图片要有明确的用途，代表；图片尺寸尽量小，一般采用JPG或者GIF压缩（即规格大小的限制）</span><br><span class="line"></span><br><span class="line">b、页面整体风格是否和系统的用途一致</span><br><span class="line">c、背景颜色，字体，搭配是否合理</span><br><span class="line"></span><br><span class="line">页面元素展示（调整浏览器窗口大小）</span><br><span class="line">列表展示</span><br><span class="line">分页展示（更改分页大小，上下页切换）</span><br><span class="line">图片展示</span><br><span class="line">输入框</span><br><span class="line">搜索框（是否支持模糊查询，查询数据前中后存在空格）</span><br><span class="line">交互提示（操作成功提示，操作确认提示，错误提示</span><br></pre></td></tr></table></figure>
+
+<p>###内容测试</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">这个主要用来检测web系统提供信息的准确性、相关性。</span><br><span class="line"></span><br><span class="line">比如：商品的价格，文字描述；信息的准确性，是否有拼写错误；（这点比较容易忽略，需要多注意）信息的相关性，比如很多网站的“相关文章列表，视频列表等”</span><br></pre></td></tr></table></figure>
+
+<h3 id="整体界面测试"><a href="#整体界面测试" class="headerlink" title="整体界面测试"></a>整体界面测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">整体界面测试</span><br><span class="line"></span><br><span class="line">a、 这个也就是我们常说的用户体验。用户浏览时是否感觉舒适，整体风格等等</span><br><span class="line"></span><br><span class="line">b、建议一般做一个类似问卷调查的形式，来判定用户的反馈信息，最好有最终用户的参与，可参考类似的笔记哦啊普遍的系统风格是怎样的，结合实际来考虑本测试系统的风格</span><br></pre></td></tr></table></figure>
+
+<h3 id="链接测试"><a href="#链接测试" class="headerlink" title="链接测试"></a>链接测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">链接测试（平时在测试过程中并不关注，而是在权限分配的安全测试中比较注重，主要是不同权限的人分享的链接是否能正确过滤，保证安全）</span><br></pre></td></tr></table></figure>
+
+<h3 id="输入框的测试"><a href="#输入框的测试" class="headerlink" title="输入框的测试"></a>输入框的测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">输入框测试（粘贴博客http://www.cnblogs.com/imyalost/p/<span class="number">5622867.</span>html）</span><br><span class="line"></span><br><span class="line">在web测试中，我们经常遇到这种输入框的测试，输入框测试看似简单，实际上包含了很多的测试基本的方法，思考逻辑，下面就是我总结出来的一些注意点：</span><br><span class="line"></span><br><span class="line">       <span class="number">1</span>）验证输入输出信息的一致性</span><br><span class="line"></span><br><span class="line">       <span class="number">2</span>）输入框前面的文字提示是否正确</span><br><span class="line"></span><br><span class="line">       <span class="number">3</span>）对特殊字符的处理、识别：单双引号，括号，逗号、分号等等，以及大小写状态，半角全角状态下的情况</span><br><span class="line"></span><br><span class="line">       <span class="number">4</span>）输入框的大小、长度、边框等</span><br><span class="line"></span><br><span class="line">       <span class="number">5</span>）不同字符的输入，以及字符组合情况的处理（数字+字母+字符等）</span><br><span class="line"></span><br><span class="line">       <span class="number">6</span>）对空格、tab换行键的处理机制</span><br><span class="line"></span><br><span class="line">       <span class="number">7</span>）密码输入框字符星号或者其他星号的转行，加密</span><br><span class="line"></span><br><span class="line">       <span class="number">8</span>）输入框输入字符长度是否有限制</span><br><span class="line"></span><br><span class="line">       <span class="number">9</span>）字符本身显示的颜色，规格等</span><br><span class="line"></span><br><span class="line">       <span class="number">10</span>）有些输入框需要加以限制，如输错，是否有提示？提示是否简单合理？</span><br><span class="line"></span><br><span class="line">       <span class="number">11</span>）输入状态，某种情况下输入框出于不可编辑，当再次处于编辑状态，输入框的输入状态是否有变化？</span><br><span class="line"></span><br><span class="line">       <span class="number">12</span>）输入类型：是否允许复制黏贴剪切等输入操作</span><br><span class="line"></span><br><span class="line">       <span class="number">13</span>）关键字是否支持通配符，以及关键字的搜索能力，敏感字等情况</span><br><span class="line"></span><br><span class="line">       <span class="number">14</span>）输入框输入空格的情况</span><br><span class="line"></span><br><span class="line">       <span class="number">15</span>）比如登陆注册，各项输入条件的判定：是否输入，输入是否正确等</span><br></pre></td></tr></table></figure>
+
+<h3 id="用户权限测试"><a href="#用户权限测试" class="headerlink" title="用户权限测试"></a>用户权限测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">用户权限测试（粘贴博客http://www.cnblogs.com/imyalost/p/<span class="number">5622867.</span>html）</span><br><span class="line"></span><br><span class="line">用户权限，顾名思义，就是该账号拥有哪些执行操作的权利</span><br><span class="line"></span><br><span class="line">       <span class="number">1</span>）给某账号赋予权限后，登陆该账号，查看是否拥有已赋予的权限，以及权限设置是否正确（权限是否超过或者不足）</span><br><span class="line"></span><br><span class="line">       <span class="number">2</span>）删除或修改已经登陆并且正在执行操作的账号权限，程序能否正确处理，验证</span><br><span class="line"></span><br><span class="line">       <span class="number">3</span>）重新注册系统变更登陆身份后再登陆，程序能否正确执行，之前所拥有的权限能否继续使用</span><br><span class="line"></span><br><span class="line">       <span class="number">4</span>）在用工作分配或者角色管理情况下，删除包含用户的工作组或者角色，程序能否正确处理</span><br><span class="line"></span><br><span class="line">       <span class="number">5</span>）不同权限账号登陆同一个系统，权限范围是否正确</span><br><span class="line"></span><br><span class="line">       <span class="number">6</span>）能否给信息为空、长用户名的账号添加权限</span><br><span class="line"></span><br><span class="line">       <span class="number">7</span>）是否允许删除系统管理员或者修改管理员权限？删除或者修改后的实际情况</span><br><span class="line"></span><br><span class="line">       <span class="number">8</span>）已登录的用户能否修改或者删除自己或者他人的权限，信息</span><br><span class="line"></span><br><span class="line">       <span class="number">9</span>）添加用户（有编号或者标识），不同用户名标识的组合情况下，权限能否处理正确</span><br><span class="line"></span><br><span class="line">       <span class="number">10</span>）修改用户权限或者信息后，对其他模块是否有影响</span><br><span class="line"></span><br><span class="line">       <span class="number">11</span>）如果修改用户信息为和已存在的其他用户信息相同，能否修改成功？是否有对应提示？</span><br><span class="line"></span><br><span class="line">       <span class="number">12</span>）修改某些设置，是否会对与该账号权限相同或者高于/低于该账号的其他账号的权限造成影响</span><br><span class="line"></span><br><span class="line">       <span class="number">13</span>）同一用户是否可以同时属于其他组，各个组的权限能否交叉？</span><br></pre></td></tr></table></figure>
+
+<h3 id="浏览器兼容测试"><a href="#浏览器兼容测试" class="headerlink" title="浏览器兼容测试"></a>浏览器兼容测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">兼容性测试：（参考博客http://www.cnblogs.com/imyalost/p/<span class="number">5622867.</span>html）</span><br><span class="line"></span><br><span class="line">a、平台兼容</span><br><span class="line"></span><br><span class="line">在有很多的操作系统，比如Windows、Unix、Linux、macintosh等；用户使用哪个系统取决于用户，因此，系统兼容测试就很有必要了。</span><br><span class="line"> 浏览器是web客户端最核心的组件，不同的浏览器，对Java，JavaScript，css或者HTML的规格都有不同的支持；</span><br><span class="line"></span><br><span class="line"> 另外，采用的框架和结构风格在不同浏览器中也存在不同的显示甚至不显示，不同的浏览器对安全性的设置也是不同的。</span><br><span class="line"></span><br><span class="line"> 测试浏览器兼容，有个方法就是创建一个兼容性矩阵，来测试不同厂商不同版本的浏览器兼容。</span><br><span class="line"></span><br><span class="line">  比如测试IE浏览器，可以通过一个叫做IEtester的工具来测试兼容，或者可以通过F12控制台来切换浏览器版本来测试兼容以前一些前端元素的显示等</span><br><span class="line"></span><br><span class="line">  鉴于国内市场浏览器很多，比如<span class="number">360</span>、搜狗，搜狐、QQ浏览器等，这些本土的浏览器基本都采用的IE浏览器内核的双核配置</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">浏览器（PC端）（注意浏览器的兼容模式和疾速模式）：</span><br><span class="line">IE浏览器，Chrome，Firefox，<span class="number">360</span>安全浏览器，<span class="number">360</span>疾速浏览器，搜狗浏览器，QQ浏览器，百度浏览器，猎豹浏览器</span><br><span class="line">浏览器（移动端）：是否兼容移动端浏览器访问</span><br><span class="line">操作系统：</span><br><span class="line">Windows7，Windows8（Windows8<span class="number">.1</span>）,Windows10</span><br><span class="line">Linux</span><br><span class="line">MacOS</span><br><span class="line">服务端升级：对旧数据的兼容</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">**浏览器的兼容性测试，需要考虑哪些方面？**</span><br><span class="line"></span><br><span class="line">IE6、IE7、IE8、IE9，FireFox，safari，chrome、opera</span><br><span class="line"></span><br><span class="line">国内的浏览器：如搜狗、<span class="number">360</span>、QQ、百度、<span class="number">2345</span>浏览器，UC浏览器，猎豹，遨游，世界之窗浏览器等</span><br><span class="line"></span><br><span class="line">**浏览器兼容性测试的工具**</span><br><span class="line"></span><br><span class="line">IE Tester专门用于IE浏览器各个版本中兼容性的工具（IE5<span class="number">.5</span>-IE9）</span><br><span class="line"></span><br><span class="line">Spoon Browser Sandbox:安装插件即可进行测试，主要是测试：safari，谷歌，火狐，opera浏览器</span><br><span class="line"></span><br><span class="line">Browser Shots，（支持浏览器种类和版本很丰富，但需要验证的应用或应用中包含的页面太多，这个软件就不太好使用）</span><br></pre></td></tr></table></figure>
+
+<h3 id="功能测试"><a href="#功能测试" class="headerlink" title="功能测试"></a>功能测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">页面跳转，前进，后退，返回，刷新（强制刷新）</span><br><span class="line">数据修改：新增，删除，更新</span><br><span class="line">文件操作：上传，下载，文件类型，文件大小</span><br></pre></td></tr></table></figure>
+
+<h3 id="安全测试"><a href="#安全测试" class="headerlink" title="安全测试"></a>安全测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">安全测试：</span><br><span class="line"></span><br><span class="line">安全测试的主要区域有以下几点：</span><br><span class="line"></span><br><span class="line">a、现在很多web应用系统都采用先注册后登录的方式，因此，测试用户名和密码的有效无效性，注意大小写敏感，次数限制，是否可以不登录而浏览某些页面等</span><br><span class="line"></span><br><span class="line">b、是否有超时限制，链接分享，cookie劫持</span><br><span class="line"></span><br><span class="line">c、测试用户操作时相关信息是否写入了日志文件、是否可追踪等</span><br><span class="line"></span><br><span class="line">d、如果使用了安全套字，需要测试加密是否正确，加密前后的信息完整性，正确性</span><br><span class="line"></span><br><span class="line">e、没有经过授权，是否可以在服务器端或者前端放置和编辑脚本的问题</span><br><span class="line"></span><br><span class="line">f、输入框的SQL注入验证</span><br></pre></td></tr></table></figure>
+
+
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+              <span>
+                <i class="iconfont icon-inbox"></i>
+                
+                  <a class="hover-with-bg" href="/categories/%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95">功能测试</a>
+                  &nbsp;
+                
+              </span>&nbsp;&nbsp;
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/web%E6%B5%8B%E8%AF%95">web测试</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;TOC</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+  </div>
+</div>
+
+    
+  </main>
+
+  
+    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
+      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+    <br>
+
+    
+  
+    <!-- 不蒜子统计PV -->
+    
+    &nbsp;<span id="busuanzi_container_site_pv">总访问量 
+          <span id="busuanzi_value_site_pv"></span> 次</span>&nbsp;
+  
+  
+    <!-- 不蒜子统计UV -->
+    
+    &nbsp;<span id="busuanzi_container_site_uv">总访客数 
+            <span id="busuanzi_value_site_uv"></span> 人</span>&nbsp;
+  
+  <br>
+
+
+
+    
+
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="/lib/jquery/jquery.min.js" ></script>
+<script src="/lib/popper/popper.min.js" ></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js" ></script>
+<script src="/lib/mdbootstrap/js/mdb.min.js" ></script>
+<script src="/js/main.js" ></script>
+
+
+  <script src="/js/lazyload.js" ></script>
+
+
+
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
+
+
+  <script src="/lib/smooth-scroll/smooth-scroll.min.js" ></script>
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+<!-- Plugins -->
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+  <script src="/lib/prettify/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').addClass('prettyprint  linenums');
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script src="/lib/typed/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "web项目测试&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script src="/lib/anchor/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "false",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script src="/lib/fancybox/jquery.fancybox.min.js" ></script>
+  <script>
+    $("#post img:not(.no-zoom img, img[no-zoom])").each(
+      function () {
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "images");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+</body>
+</html>
