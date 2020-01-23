@@ -8,7 +8,7 @@
     <link href="undefined2020/01/23/%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%BF%85%E5%A4%87%E6%8A%80%E8%83%BD/"/>
     <url>2020/01/23/%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%BF%85%E5%A4%87%E6%8A%80%E8%83%BD/</url>
     
-    <content type="html"><![CDATA[<p>[TOC]</p><h1 id="测试工程师相关技能整理"><a href="#测试工程师相关技能整理" class="headerlink" title="测试工程师相关技能整理"></a>测试工程师相关技能整理</h1><h2 id="通用技能"><a href="#通用技能" class="headerlink" title="通用技能"></a>通用技能</h2><p><strong>业务相关</strong>：<br>业务需求知识，业务管理流程，行业现状和发展方向</p><p><strong>管理相关</strong>：</p><p><strong>时间管理（四象限法则）</strong></p><p>重要且紧急，重要不紧急，紧急不重要，不紧急不重要</p><p><strong>目标管理（SMART法则）</strong></p><p>S（Specific）：目标明确，M（Measurable）：目标可度量</p><p>A（Attainable）：目标可实现性</p><p>R（Relevant）：目标必须和其它目标具有相关性</p><p>T（Time-based）：目标具有明确的截止期限</p><p><strong>知识管理</strong></p><h4 id="工具：xmind、有道云笔记、印象笔记、Blog、GitHub、CSDN、testerhome-51testing等"><a href="#工具：xmind、有道云笔记、印象笔记、Blog、GitHub、CSDN、testerhome-51testing等" class="headerlink" title="工具：xmind、有道云笔记、印象笔记、Blog、GitHub、CSDN、testerhome,51testing等"></a>工具：xmind、有道云笔记、印象笔记、Blog、GitHub、CSDN、testerhome,51testing等</h4><hr><p>[TOC]</p><h2 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h2><p>今天完成了什么内容、明天需要做什么</p><p>自己哪些方面做得好，哪些做得不够好，下次需要改进</p><p>近期工作计划、学习计划（制定todolist）</p><p>职业规划</p><p>人生规划</p><h2 id="沟通"><a href="#沟通" class="headerlink" title="沟通"></a>沟通</h2><p>敢于沟通：主动了解和听取对方的想法，敢于表达自己的观点</p><p>勤于沟通：多和别人交流自己的意见和想法</p><p>善于沟通：提升沟通技巧和效率</p><h3 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h3><h5 id="抓包工具"><a href="#抓包工具" class="headerlink" title="抓包工具"></a>抓包工具</h5><p>fiddler，Charles，wireshark</p><h5 id="缺陷管理工具"><a href="#缺陷管理工具" class="headerlink" title="缺陷管理工具"></a>缺陷管理工具</h5><p>jira，禅道</p><h5 id="文档协作管理工具"><a href="#文档协作管理工具" class="headerlink" title="文档协作管理工具"></a>文档协作管理工具</h5><p>wiki–协同创作超文本系统 ，Docs–在线协作编辑工具，Xmind–思维导图软件，tower</p><h5 id="接口测试工具"><a href="#接口测试工具" class="headerlink" title="接口测试工具"></a>接口测试工具</h5><p>postman，HttpRequester，Yapi</p><h5 id="压力测试工具"><a href="#压力测试工具" class="headerlink" title="压力测试工具"></a>压力测试工具</h5><p>Jmeter，LoadRunner</p><h5 id="安全测试工具"><a href="#安全测试工具" class="headerlink" title="安全测试工具"></a>安全测试工具</h5><p>AWVS–网站及服务器漏洞扫描软件<br>sqlmap–检测与利用SQL注入漏洞的免费开源工具<br>Nmap–网络扫描和嗅探工具</p><h5 id="客户端测试"><a href="#客户端测试" class="headerlink" title="客户端测试"></a>客户端测试</h5><p>adb命令，系统版本兼容，屏幕分辨率兼容，屏幕类型兼容（普通屏幕、全面屏、刘海屏、挖孔屏等），导航栏类型兼容（虚拟导航栏、手势导航栏、mBack导航栏等），厂商兼容</p><h5 id="服务端测试"><a href="#服务端测试" class="headerlink" title="服务端测试"></a>服务端测试</h5><h5 id="自动化测试"><a href="#自动化测试" class="headerlink" title="自动化测试"></a>自动化测试</h5><p><strong>UI自动化测试</strong></p><p><strong>Android自动化测试</strong><br>UIAutomator<br>appium（基于webdriver框架）<br>uiautomator2（轻量级，仅支持Android） -AirTest：<a href="http://airtest.netease.com/" target="_blank" rel="noopener">http://airtest.netease.com/</a><br><strong>iOS自动化测试</strong><br>WebDriverAgent<br>appium（基于WebDriverAgent框架） -AirTest：<a href="http://airtest.netease.com/" target="_blank" rel="noopener">http://airtest.netease.com/</a><br><strong>Web自动化测试</strong><br>Selenium<br><strong>微信小程序自动化测试</strong><br>ChromeDriver<br><strong>接口自动化</strong><br>Python+request<br>Robot Framework<br>HttpRunner<br>Postman+Newman<br>Jmeter+Ant<br>Vue+Flask&amp;Django<br><strong>专项测试<em>8<br>app性能测试<br>PerfDog：<a href="https://testerhome.com/topics/21137" target="_blank" rel="noopener">https://testerhome.com/topics/21137</a><br>adb（安卓）<br>ffmpeg（音视频）<br>*</em>H5性能测试<em>8<br>Chrome Devtool<br>W3C Performance API<br>*</em>稳定性测试</strong><br>Monkey<br>MonkeyRunner<br>MonkeyScript<br><strong>弱网测试</strong><br>Charles<br>AppCrawler<br><strong>耗电量分析</strong><br>dumpsys batterystatus<br>Battery-Historian<br>BugReport<br><strong>流量分析</strong><br>Proxy<br>TCPDUMP<br><strong>性能测试</strong><br>内存<br>Android Studio Profile<br>PerfDog<br>leakCanary<br>CPU<br>Android Studio Profile<br>Android Monitor<br>PerfDog<br>iOS Instruments<br>卡顿分析<br>Systrace<br>Overdraw</p><h4 id="编程相关"><a href="#编程相关" class="headerlink" title="编程相关"></a>编程相关</h4><h5 id="IDE"><a href="#IDE" class="headerlink" title="IDE"></a>IDE</h5><p>PyCharm — Python  ，Sublime – shell</p><h4 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h4><p>unittest，pytest，request</p><h4 id="shell"><a href="#shell" class="headerlink" title="shell"></a>shell</h4><p>linux基本命令（find、netstat、ps等）<br>linux三剑客<br>grep<br>awk<br>sed</p><h4 id="代码版本控制"><a href="#代码版本控制" class="headerlink" title="代码版本控制"></a>代码版本控制</h4><p>git，svn</p><h4 id="DataBase"><a href="#DataBase" class="headerlink" title="DataBase"></a>DataBase</h4><p>MySQL，MongoDB</p><h4 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h4><p>Python正则表达式  ，shell编程之正则表达式:<a href="http://www.imooc.com/learn/378" target="_blank" rel="noopener">http://www.imooc.com/learn/378</a></p><h4 id="持续集成-amp-持续交付"><a href="#持续集成-amp-持续交付" class="headerlink" title="持续集成&amp;持续交付"></a>持续集成&amp;持续交付</h4><p>Jenkins<br>Docker</p><h4 id="平台开发"><a href="#平台开发" class="headerlink" title="平台开发"></a>平台开发</h4><p>Vue.js<br>Nodejs<br>Python Django/Flask</p>]]></content>
+    <content type="html"><![CDATA[<p>[TOC]</p><h1 id="测试工程师相关技能整理"><a href="#测试工程师相关技能整理" class="headerlink" title="测试工程师相关技能整理"></a>测试工程师相关技能整理</h1><h2 id="通用技能"><a href="#通用技能" class="headerlink" title="通用技能"></a>通用技能</h2><p><strong>业务相关</strong>：<br>业务需求知识，业务管理流程，行业现状和发展方向</p><p><strong>管理相关</strong>：</p><p><strong>时间管理（四象限法则）</strong></p><p>重要且紧急，重要不紧急，紧急不重要，不紧急不重要</p><p><strong>目标管理（SMART法则）</strong></p><p>S（Specific）：目标明确，M（Measurable）：目标可度量</p><p>A（Attainable）：目标可实现性</p><p>R（Relevant）：目标必须和其它目标具有相关性</p><p>T（Time-based）：目标具有明确的截止期限</p><p><strong>知识管理</strong></p><h4 id="工具：xmind、有道云笔记、印象笔记、Blog、GitHub、CSDN、testerhome-51testing等"><a href="#工具：xmind、有道云笔记、印象笔记、Blog、GitHub、CSDN、testerhome-51testing等" class="headerlink" title="工具：xmind、有道云笔记、印象笔记、Blog、GitHub、CSDN、testerhome,51testing等"></a>工具：xmind、有道云笔记、印象笔记、Blog、GitHub、CSDN、testerhome,51testing等</h4><h2 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h2><p>今天完成了什么内容、明天需要做什么</p><p>自己哪些方面做得好，哪些做得不够好，下次需要改进</p><p>近期工作计划、学习计划（制定todolist）</p><p>职业规划</p><p>人生规划</p><h2 id="沟通"><a href="#沟通" class="headerlink" title="沟通"></a>沟通</h2><p>敢于沟通：主动了解和听取对方的想法，敢于表达自己的观点</p><p>勤于沟通：多和别人交流自己的意见和想法</p><p>善于沟通：提升沟通技巧和效率</p><h3 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h3><h5 id="抓包工具"><a href="#抓包工具" class="headerlink" title="抓包工具"></a>抓包工具</h5><p>fiddler，Charles，wireshark</p><h5 id="缺陷管理工具"><a href="#缺陷管理工具" class="headerlink" title="缺陷管理工具"></a>缺陷管理工具</h5><p>jira，禅道</p><h5 id="文档协作管理工具"><a href="#文档协作管理工具" class="headerlink" title="文档协作管理工具"></a>文档协作管理工具</h5><p>wiki–协同创作超文本系统 ，Docs–在线协作编辑工具，Xmind–思维导图软件，tower</p><h5 id="接口测试工具"><a href="#接口测试工具" class="headerlink" title="接口测试工具"></a>接口测试工具</h5><p>postman，HttpRequester，Yapi</p><h5 id="压力测试工具"><a href="#压力测试工具" class="headerlink" title="压力测试工具"></a>压力测试工具</h5><p>Jmeter，LoadRunner</p><h5 id="安全测试工具"><a href="#安全测试工具" class="headerlink" title="安全测试工具"></a>安全测试工具</h5><p>AWVS–网站及服务器漏洞扫描软件<br>sqlmap–检测与利用SQL注入漏洞的免费开源工具<br>Nmap–网络扫描和嗅探工具</p><h5 id="客户端测试"><a href="#客户端测试" class="headerlink" title="客户端测试"></a>客户端测试</h5><p>adb命令，系统版本兼容，屏幕分辨率兼容，屏幕类型兼容（普通屏幕、全面屏、刘海屏、挖孔屏等），导航栏类型兼容（虚拟导航栏、手势导航栏、mBack导航栏等），厂商兼容</p><h5 id="服务端测试"><a href="#服务端测试" class="headerlink" title="服务端测试"></a>服务端测试</h5><h5 id="自动化测试"><a href="#自动化测试" class="headerlink" title="自动化测试"></a>自动化测试</h5><p><strong>UI自动化测试</strong></p><p><strong>Android自动化测试</strong><br>UIAutomator<br>appium（基于webdriver框架）<br>uiautomator2（轻量级，仅支持Android） -AirTest：<a href="http://airtest.netease.com/" target="_blank" rel="noopener">http://airtest.netease.com/</a><br><strong>iOS自动化测试</strong><br>WebDriverAgent<br>appium（基于WebDriverAgent框架） -AirTest：<a href="http://airtest.netease.com/" target="_blank" rel="noopener">http://airtest.netease.com/</a><br><strong>Web自动化测试</strong><br>Selenium<br><strong>微信小程序自动化测试</strong><br>ChromeDriver<br><strong>接口自动化</strong><br>Python+request<br>Robot Framework<br>HttpRunner<br>Postman+Newman<br>Jmeter+Ant<br>Vue+Flask&amp;Django<br><strong>专项测试<em>8<br>app性能测试<br>PerfDog：<a href="https://testerhome.com/topics/21137" target="_blank" rel="noopener">https://testerhome.com/topics/21137</a><br>adb（安卓）<br>ffmpeg（音视频）<br>*</em>H5性能测试<em>8<br>Chrome Devtool<br>W3C Performance API<br>*</em>稳定性测试</strong><br>Monkey<br>MonkeyRunner<br>MonkeyScript<br><strong>弱网测试</strong><br>Charles<br>AppCrawler<br><strong>耗电量分析</strong><br>dumpsys batterystatus<br>Battery-Historian<br>BugReport<br><strong>流量分析</strong><br>Proxy<br>TCPDUMP<br><strong>性能测试</strong><br>内存<br>Android Studio Profile<br>PerfDog<br>leakCanary<br>CPU<br>Android Studio Profile<br>Android Monitor<br>PerfDog<br>iOS Instruments<br>卡顿分析<br>Systrace<br>Overdraw</p><h4 id="编程相关"><a href="#编程相关" class="headerlink" title="编程相关"></a>编程相关</h4><h5 id="IDE"><a href="#IDE" class="headerlink" title="IDE"></a>IDE</h5><p>PyCharm — Python  ，Sublime – shell</p><h4 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h4><p>unittest，pytest，request</p><h4 id="shell"><a href="#shell" class="headerlink" title="shell"></a>shell</h4><p>linux基本命令（find、netstat、ps等）<br>linux三剑客<br>grep<br>awk<br>sed</p><h4 id="代码版本控制"><a href="#代码版本控制" class="headerlink" title="代码版本控制"></a>代码版本控制</h4><p>git，svn</p><h4 id="DataBase"><a href="#DataBase" class="headerlink" title="DataBase"></a>DataBase</h4><p>MySQL，MongoDB</p><h4 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h4><p>Python正则表达式  ，shell编程之正则表达式:<a href="http://www.imooc.com/learn/378" target="_blank" rel="noopener">http://www.imooc.com/learn/378</a></p><h4 id="持续集成-amp-持续交付"><a href="#持续集成-amp-持续交付" class="headerlink" title="持续集成&amp;持续交付"></a>持续集成&amp;持续交付</h4><p>Jenkins<br>Docker</p><h4 id="平台开发"><a href="#平台开发" class="headerlink" title="平台开发"></a>平台开发</h4><p>Vue.js<br>Nodejs<br>Python Django/Flask</p>]]></content>
     
     
     <categories>
@@ -46,6 +46,58 @@
     <tags>
       
       <tag>H5</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>性能测试</title>
+    <link href="undefined2020/01/23/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/"/>
+    <url>2020/01/23/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/</url>
+    
+    <content type="html"><![CDATA[<p>[TOC]</p><h2 id="App的性能测试注意点"><a href="#App的性能测试注意点" class="headerlink" title="App的性能测试注意点"></a>App的性能测试注意点</h2><p>评估App的时间和空间特性 ：</p><p>1)极限测试：在各种边界压力情况下，如电池、存储、网速等，验证App是否能正确响应。</p><p>–内存满时安装App</p><p>–运行App时手机断电</p><p>–运行App时断掉网络</p><p>2)响应能力测试：测试App中的各类操作是否满足用户响应时间要求 。（安装包放到云测上可以测试）</p><p>–App安装、卸载的响应时间</p><p>–App各类功能性操作的影响时间</p><p>3)压力测试：反复/长期操作下、系统资源是否占用异常。（itestin）</p><p>–App反复进行安装卸载，查看系统资源是否正常</p><p>–其他功能反复进行操作，查看系统资源是否正常</p><p>4)性能评估：评估典型用户应用场景下，系统资源的使用情况。（Jmeter）</p><p>###PerfDog</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>Android/iOS移动应用的性能测试工具</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span>PerfDog支持基于云端的看 板，可以存储、管理PerfDog收集的所有测试数据。可以对应用的APP，游戏，小程序，H5，web，进行CPU和内存实时监测，并且还支持手机温度、电量、网络、FPS等指标的测试和监控，真的算是功能完备的性能测试工具，满足了大部分性能测试的需求，极大的提升了性能测试的效率，PerfDog是由WeTest腾讯质量开放平台发行，能快速定位分析性能问题，提升APP应用及游戏性能和品质，手机无需ROOT/越狱，手机硬件、游戏及应用无需做任何更改，极简化即插即用。</span><br><span class="line"></span><br><span class="line"><span class="number">3.</span>PerfDog官网：perfdog.qq.com</span><br><span class="line"></span><br><span class="line"><span class="number">4.</span>腾讯WeTest官网：wetest.qq.com</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>性能测试</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>PerfDog</tag>
+      
+      <tag>性能测试</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>运营相关</title>
+    <link href="undefined2020/01/23/%E8%BF%90%E8%90%A5%E7%9B%B8%E5%85%B3/"/>
+    <url>2020/01/23/%E8%BF%90%E8%90%A5%E7%9B%B8%E5%85%B3/</url>
+    
+    <content type="html"><![CDATA[<p>[TOC]</p><h2 id="投放"><a href="#投放" class="headerlink" title="投放"></a>投放</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">市场投放？把我们的微信号放到别人的公众号上</span><br><span class="line">产品运营？在自己的公众号上发自己的广告</span><br><span class="line">公众号</span><br><span class="line">信息流：在抖音，知乎上投放的广告</span><br><span class="line">广告式转化（关注通知）和交互式转化（群，个人号）</span><br><span class="line">投放的<span class="number">4</span>个小时之后，<span class="number">48</span>小时之后失效</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>运营</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>运营</tag>
       
     </tags>
     
@@ -146,58 +198,6 @@
     <tags>
       
       <tag>Postman</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>性能测试</title>
-    <link href="undefined2020/01/14/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/"/>
-    <url>2020/01/14/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/</url>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><h2 id="App的性能测试注意点"><a href="#App的性能测试注意点" class="headerlink" title="App的性能测试注意点"></a>App的性能测试注意点</h2><p>评估App的时间和空间特性 ：</p><p>1)极限测试：在各种边界压力情况下，如电池、存储、网速等，验证App是否能正确响应。</p><p>–内存满时安装App</p><p>–运行App时手机断电</p><p>–运行App时断掉网络</p><p>2)响应能力测试：测试App中的各类操作是否满足用户响应时间要求 。（安装包放到云测上可以测试）</p><p>–App安装、卸载的响应时间</p><p>–App各类功能性操作的影响时间</p><p>3)压力测试：反复/长期操作下、系统资源是否占用异常。（itestin）</p><p>–App反复进行安装卸载，查看系统资源是否正常</p><p>–其他功能反复进行操作，查看系统资源是否正常</p><p>4)性能评估：评估典型用户应用场景下，系统资源的使用情况。（Jmeter）</p><p>###PerfDog</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>Android/iOS移动应用的性能测试工具</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span>PerfDog支持基于云端的看 板，可以存储、管理PerfDog收集的所有测试数据。可以对应用的APP，游戏，小程序，H5，web，进行CPU和内存实时监测，并且还支持手机温度、电量、网络、FPS等指标的测试和监控，真的算是功能完备的性能测试工具，满足了大部分性能测试的需求，极大的提升了性能测试的效率，PerfDog是由WeTest腾讯质量开放平台发行，能快速定位分析性能问题，提升APP应用及游戏性能和品质，手机无需ROOT/越狱，手机硬件、游戏及应用无需做任何更改，极简化即插即用。</span><br><span class="line"></span><br><span class="line"><span class="number">3.</span>PerfDog官网：perfdog.qq.com</span><br><span class="line"></span><br><span class="line"><span class="number">4.</span>腾讯WeTest官网：wetest.qq.com</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-    <categories>
-      
-      <category>性能测试</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>PerfDog</tag>
-      
-      <tag>性能测试</tag>
-      
-    </tags>
-    
-  </entry>
-  
-  
-  
-  <entry>
-    <title>运营相关</title>
-    <link href="undefined2020/01/14/%E8%BF%90%E8%90%A5%E7%9B%B8%E5%85%B3/"/>
-    <url>2020/01/14/%E8%BF%90%E8%90%A5%E7%9B%B8%E5%85%B3/</url>
-    
-    <content type="html"><![CDATA[<p>[TOC]</p><h2 id="投放"><a href="#投放" class="headerlink" title="投放"></a>投放</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">市场投放？把我们的微信号放到别人的公众号上</span><br><span class="line">产品运营？在自己的公众号上发自己的广告</span><br><span class="line">公众号</span><br><span class="line">信息流：在抖音，知乎上投放的广告</span><br><span class="line">广告式转化（关注通知）和交互式转化（群，个人号）</span><br><span class="line">投放的<span class="number">4</span>个小时之后，<span class="number">48</span>小时之后失效</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-    <categories>
-      
-      <category>运营</category>
-      
-    </categories>
-    
-    
-    <tags>
-      
-      <tag>运营</tag>
       
     </tags>
     
