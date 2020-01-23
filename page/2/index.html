@@ -133,24 +133,229 @@
     
     
     <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/11/06/H5测试/">
-        <p class="h4 index-header"></p>
+      <a href="/2020/01/14/使用python进行验证码识别/">
+        <p class="h4 index-header">使用python进行验证码识别</p>
         
         
           
         
         <div class="index-excerpt" >
-          <div class="index-text mb-1">H5是HTML5简称，是最新的web端开发语言版本，是移动端的web页面；从广义上来说，HTML5是包括HTML,CSS,JS在内的一套技术组合；HTML负责网页的具体内容和结构；CSS网页的样式，主要负责美化，JS负责网页的交付效果，比如对用户鼠标点击事件作出相应；H5应用的地方：APP的活动专题页面，新闻网页，微信公众号文章页面，在PC或者手机浏览器都可以直接访问H5页面；优点：可以跨平台使用，开发成本相对较低，可随时上线更新版本，适合快速迭代，可以轻量的触达用户，提供更便捷的服务
-如何识别H5？1.长按页面，看会不会有震动（andriod）或者出现文字选择粘贴(andriod/ios)；2.横竖屏相互切换，能自适应且布局不会乱掉；
-测试关注点？1.业务逻辑测试，跟业务需求来定；2.页面元素ui测试（文字，图片，页面布局等测试）文字：风格是否一致，错别字，标点符号统一，换行是否显示正常，一行长文字是省略显示还是全显示，图片与文字是否一致，刷新页面文字是否展示；图片：静态（大小，格式），动态（大小，风格，准确性动态图，转场动画，loading动画，点击动画等），图片适配（不同屏幕和分</div>
+          <div class="index-text mb-1">###百度OCR使用教程
+1234567891011121314151617181920212223241.打开百度云网址：https://cloud.baidu.com/2.点击进入管理控制台：https://console.bce.baidu.com3.左侧导航栏–&gt;选择人工智能–&gt;选择文字识别；4.点击创建应用–&gt;获取API KEY和SECRET KEY；5. 安装baidu-aip模块；（pip3 install Baidu-api）6.调用aip模块中的AipOcr，输入参数ID，KEY 和SECRET(from api import ApiOcrAPP_ID=‘’APi_KEY=‘’SECRET_KEY=‘’)7.定义get_file_content方法获取图片二进制内容，参数为图片路径8.创建image对象，填写图片实际路径（用client下的basicGeneral获取识别信息words）
+
+python自动识别web项目登录的验证码123456789101112131415161718192021222324252627282930313233343</div>
         </div>
       </a>
 
       <div>
         
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-11-06&nbsp;&nbsp;
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-01-14&nbsp;&nbsp;
         
         
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E8%AF%86%E5%88%AB%E9%AA%8C%E8%AF%81%E7%A0%81">识别验证码</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/python">python</a>&nbsp;
+          
+            <a href="/tags/ocr">ocr</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2020/01/14/python知识点/">
+        <p class="h4 index-header">python知识点.md</p>
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">[TOC]
+##python切片
+###字符串没有步长的切片
+1234567891011hebe=“sdfghjasd”格式hebe[start:end]Start:表示开始截取的下标，end表示截取下标的前一位，开始索引和结束索引如果是从头开始或一致接渠道最后一个可不写[:]=dfghjasd从前往后索引为正，从后往前，索引为负hebe[1:6]=dfghihebe[-4:]=iasd
+
+###字符串有步长的切片
+123Hebe [start: stop: stride]步长为几就是每隔几个取一个,其他规则同无步长
+
+python命名规则123456789python变量名命名规则:　　1.变量名通常由字母,数字,下划线组成;　　2.数字不能作为变量名开头;　　3.不能以python中的关键字命名;　　4.变量名要有意义;　　5.不要用汉字和拼音去命名;　　6.变量名要区分大小写;　　7.推荐使用驼峰型(GuessAge或guessAge)和下划线(guess_age)来命名;　　8.常量通常使用大写来定义.
+
+os的使用1234567891011121314151617181920</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-01-14&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/python">python</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/python">python</a>&nbsp;
+          
+            <a href="/tags/%E5%88%87%E7%89%87">切片</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2020/01/04/功能测试基础知识/">
+        <p class="h4 index-header">功能测试基础知识.md</p>
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">
+[TOC]
+测试理论软件开发模型瀑布模型模型：需求分析-概要设计-详细设计-编码-软件测试-软件维护
+优点：线性模型，是其他模型的基础，文档驱动；开发的各个阶段比较清晰，当前阶段完成之后只需关注后续阶段
+缺点：风险后延，不适应需求的变化
+快速原型模型：快速分析-构造-运行-评价-快速分析-构造-运行-评价-快速分析…
+特点：在开发真实系统之前先构造一个原型，在该原型的基础上，逐渐完成整个系统的开发工作
+优点：支持用户参与，适应需求变化，减少由于需求不明带来的项目开发风险
+####螺旋模型
+优点：引进了风险分析活动
+缺点：需要丰富的风险评估经验和专业知识
+软件测试模型####v模型
+示意图：需求分析-概要设计-详细设计-编码-单元测试-集成测试-系统测试-验收测试
+缺点：返工量大，灵活性比较低
+w模型示意图：需求分析（验收/系统测试设计）-概要设计（集成测试设计）-详细设计（单元测试设计）-编码（单元测试）-集成（集成测试）-实施（系统测试）-交付（验收测试）
+优点：测试伴随着整个软件的开发周期，早介入，早发现，早修复且不仅对程序，文档和设计也进行测试
+####H模型
+示意图：测试准备</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2020-01-04&nbsp;&nbsp;
+        
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95">功能测试</a>&nbsp;
+          
+            <a href="/tags/%E5%BC%80%E5%8F%91%E6%A8%A1%E5%9E%8B">开发模型</a>&nbsp;
+          
+            <a href="/tags/%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%9E%8B">测试模型</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2019/12/28/电脑手机相关常识/">
+        <p class="h4 index-header">电脑手机公司相关常识.md</p>
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">[TOC]
+###电脑手机的快捷键
+1234567891011121314151617iphone6s截屏键：关机键+home键小米手机的截屏：右边音量下键+屏幕上的三个横线同时摁；Vivo手机截屏：右侧手机电源键+音量下键OPPO手机截屏：三指往下滑；Mac电脑Chrome浏览器开发者工具的快捷键：开发者工具：option＋command＋ijavascript控制台：option＋command＋j或者按option＋command＋c也可以打开在终端中打开另一个终端的快捷键：command+T
+
+Mac电脑便利贴12大的显示器自己的便利贴Mac笔记本电脑需要自己在appstore里面下载Simple Antnotes获取安装即可-⌘+n新建一个便利签
+
+###公司常用语
+PMO:PMO(Project Management Office)一般称为项目管理办公室、项目管理中心或者项目管理部，是在组织内部将实践、过程、运作形式化和标准化，同时在组织内各机能间，为推动专案前进产生各种工作资源冲突时，负责协调整合的机能，所以是为了提高组织管理成熟度的核心部门，它根据业界最佳实践和公认的项</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-12-28&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/%E5%B8%B8%E8%AF%86">常识</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E7%94%B5%E8%84%91">电脑</a>&nbsp;
+          
+            <a href="/tags/%E6%89%8B%E6%9C%BA">手机</a>&nbsp;
+          
+            <a href="/tags/%E5%85%AC%E5%8F%B8">公司</a>&nbsp;
+          
+            <a href="/tags/%E5%B8%B8%E8%AF%86">常识</a>&nbsp;
+          
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="row mb-4 mx-auto">
+    
+    
+    <div class="col-12 col-md-8 m-auto">
+      <a href="/2019/11/19/测试相关常识/">
+        <p class="h4 index-header">测试相关常识.md</p>
+        
+        
+          
+        
+        <div class="index-excerpt" >
+          <div class="index-text mb-1">[TOC]
+###测试常识
+微信开发者工具的使用
+微信开发者文档：一个用户针对一个公众号会产生一个OpenID,
+微信开发者工具可以方便微信开发者和测试人员模拟用户的手机操作；
+####大驼峰和小驼峰命名的区别？
+大驼峰：每个单词的首字母大写；小驼峰：第一个单词的首字母小写，后续单词的首字母均大写
+####K12是什么？
+K12是学前教育至高中教育的缩写，现在普遍被用来代指基础教育
+苹果手机怎么清cookies？android手机怎么清cookies？浏览器怎么清cookies?12345IOS:设置-Safari-清楚历史记录与网站数据和cookies;android：点击手机浏览器的图标-点击右上角的三个点-点击设置-安全与隐私-清除浏览器数据和cookie-勾选cookie和网站数据-确定；浏览器：点击浏览器右上方的向上箭头-更多工具-清楚浏览器数据-选择cookie及其他网站数据-清楚数据；
+
+灰度测试？12345在某项产品或应用正式发布之前，选择特定人群试用，逐步扩大其适用者数量，以便及时发现和纠正其中的问题适用的范围：软件要在不久的将来推出一个全新的功能或者做一次比较大的改</div>
+        </div>
+      </a>
+
+      <div>
+        
+          <i class="iconfont icon-riqi2"></i>&nbsp;2019-11-19&nbsp;&nbsp;
+        
+        
+          <i class="iconfont icon-inbox"></i>
+          
+            <a href="/categories/Yapi">Yapi</a>&nbsp;
+          &nbsp;
+        
+        
+          <i class="iconfont icon-tag"></i>
+          
+            <a href="/tags/%E6%B5%8B%E8%AF%95%E7%9B%B8%E5%85%B3%E5%B8%B8%E8%AF%86">测试相关常识</a>&nbsp;
+          
         
       </div>
     </div>
@@ -380,222 +585,11 @@
     </div>
   </div>
 
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/08/27/blogs/">
-        <p class="h4 index-header">blogs</p>
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">[TOC]
-#如何在hexo新建文件并上传至博客1.首先打开终端，切换到_posts文件所在路径，hexo new 文件名（新建一个.md文件）
-2.以Typora的形式打开进行编辑，完成之后在终端中输入：hexo generate，回车，生成静态页面
-3.再输入：hexo server，回车，到localhost:4000预览博客效果
-4.最后输入：hexo deploy，回车，同步到github上去就行了
-</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-08-27&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/hexo">hexo</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/blogs">blogs</a>&nbsp;
-          
-            <a href="/tags/hexo">hexo</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/08/27/Charles/">
-        <p class="h4 index-header">Charles手机和浏览器抓包</p>
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">charles 浏览器和手机抓包@(charles)[http|https][TOC]
-##http手机抓包操作步骤
-1打开Charles，点击proxy-点击Mac OS x proxy取消前面的对勾，对勾保存是电脑抓包-点击proxy setting-在enable transparent http proxy 前面打对勾然后点击ok-点击设置保证跟电脑连接的是同一个局域网点击链接的wifi-选择手动-输入服务器的IP（安装了Charles的电脑的IP地址，可在Charles-help-local IP adress中查看）和端口号-点击Charles（⭕️）开始录制按钮，手机这边操作就可以开始抓包了；
-
-##Charles Android/ios手机抓https协议
-1234561.电脑端打开Charles-help-ssl proxying-install Charles root certificate2.下载安装证书，默认路径不需要更改，在钥匙串访问中选择证书双击证书文件-选择始始终信任3.电脑端打开Charles-help-ssl proxying-install Cha</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-08-27&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/charles">charles</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/Charles">Charles</a>&nbsp;
-          
-            <a href="/tags/http">http</a>&nbsp;
-          
-            <a href="/tags/https">https</a>&nbsp;
-          
-            <a href="/tags/%E6%BF%80%E6%B4%BB">激活</a>&nbsp;
-          
-            <a href="/tags/%E6%89%93%E6%96%AD%E7%82%B9">打断点</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/08/25/mysql/">
-        <p class="h4 index-header">mysql</p>
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">[TOC]
-#查
-mysql忘记密码解决方法mysql 解决忘记密码问题
-mac下mysql 1045 (28000): Access denied for user ‘root’@’localhost’ (using password:
-新入了mac pro，安装好mysql后，用终端进入mysql遇到个问题： 1045 (28000): Access denied for user ‘root’@’localhost’ (using password: N
-讲道理，我还设密码呢，但是第一次进来就报错，goo了一下大概原因可能是mysql创建的时候给自动分配了密码。
-不管分配没分配密码，反正一般的解决方法就是：先跳过验证，再重设密码。
-具体步骤：
-
-先关闭MySQL服务；执行
-sudo /usr/local/mysql/support-files/mysql.server stop
-
-
-或者在系统偏好设置中关闭MySQL服务(如果电脑有设置密码的，此处会要求输入计算机密码)
-2.去mysql文件夹里设置跳过验证（3步）
-12345678910先进入mysql文件夹：cd /usr/l</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-08-25&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/mysql">mysql</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/mysql">mysql</a>&nbsp;
-          
-            <a href="/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%A2%9E%E5%88%A0%E6%94%B9%E6%9F%A5">数据库的增删改查</a>&nbsp;
-          
-            <a href="/tags/%E5%AD%90%E6%9F%A5%E8%AF%A2">子查询</a>&nbsp;
-          
-            <a href="/tags/%E5%B7%A6%E8%BF%9E%E6%8E%A5">左连接</a>&nbsp;
-          
-            <a href="/tags/%E5%8F%B3%E8%BF%9E%E6%8E%A5">右连接</a>&nbsp;
-          
-            <a href="/tags/%E5%86%85%E8%BF%9E%E6%8E%A5">内连接</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
-  <div class="row mb-4 mx-auto">
-    
-    
-    <div class="col-12 col-md-8 m-auto">
-      <a href="/2019/08/25/linux命令/">
-        <p class="h4 index-header">linux命令</p>
-        
-        
-          
-        
-        <div class="index-excerpt" >
-          <div class="index-text mb-1">[TOC]
-#操作系统及其分类
-####操作系统
-负责协调硬件设备和软件资源的系统软件
-#####桌面操作系统
-windows界面化
-macOS
-Linux
-#####服务器操作系统
-Linux （安全 稳定 免费）
-Windows  server （付费）
-#####嵌入式操作系统
-Linux
-移动设备操作系统Android
-iOS
-Linux版本Linux内核版本稳定版
-发行版
-Linux发行版本Ubuntu
-Centos
-Redhat
-Linux和Windows的区别windows通过盘符（C/D/E盘）管理文件和目录而Linux没有盘符的概念，所有的文件和目录都在根目录下（/）
-Linux命令大全##Linux常用的几个基本命令
-123456789101112131415161718192021222324252627282930313233343536ls 查看文件夹下的内容ls -a :显示所有文件包含隐藏文件ls  -l :显示文件的所有详细信息ls -lh :人性化显示文件大小ls -alh :查看某个文件下的所有文件包含隐藏文件并显示文件的详细信息，文件大小人性化显示</div>
-        </div>
-      </a>
-
-      <div>
-        
-          <i class="iconfont icon-riqi2"></i>&nbsp;2019-08-25&nbsp;&nbsp;
-        
-        
-          <i class="iconfont icon-inbox"></i>
-          
-            <a href="/categories/linux">linux</a>&nbsp;
-          &nbsp;
-        
-        
-          <i class="iconfont icon-tag"></i>
-          
-            <a href="/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F">操作系统</a>&nbsp;
-          
-            <a href="/tags/linux">linux</a>&nbsp;
-          
-            <a href="/tags/%E6%B5%8B%E8%AF%95">测试</a>&nbsp;
-          
-        
-      </div>
-    </div>
-  </div>
-
 
 
   <nav aria-label="index posts navigation">
     <span class="pagination pg-blue justify-content-center mt-5" id="pagination">
-      <a class="extend prev" rel="prev" href="/"><i class="fas fa-angle-double-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
+      <a class="extend prev" rel="prev" href="/"><i class="fas fa-angle-double-left"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fas fa-angle-double-right"></i></a>
     </span>
   </nav>
   

@@ -4,6 +4,56 @@
   
   
   <entry>
+    <title>测试工程师必备技能</title>
+    <link href="undefined2020/01/23/%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%BF%85%E5%A4%87%E6%8A%80%E8%83%BD/"/>
+    <url>2020/01/23/%E6%B5%8B%E8%AF%95%E5%B7%A5%E7%A8%8B%E5%B8%88%E5%BF%85%E5%A4%87%E6%8A%80%E8%83%BD/</url>
+    
+    <content type="html"><![CDATA[<p>[TOC]</p><h1 id="测试工程师相关技能整理"><a href="#测试工程师相关技能整理" class="headerlink" title="测试工程师相关技能整理"></a>测试工程师相关技能整理</h1><h2 id="通用技能"><a href="#通用技能" class="headerlink" title="通用技能"></a>通用技能</h2><p><strong>业务相关</strong>：<br>业务需求知识，业务管理流程，行业现状和发展方向</p><p><strong>管理相关</strong>：</p><p><strong>时间管理（四象限法则）</strong></p><p>重要且紧急，重要不紧急，紧急不重要，不紧急不重要</p><p><strong>目标管理（SMART法则）</strong></p><p>S（Specific）：目标明确，M（Measurable）：目标可度量</p><p>A（Attainable）：目标可实现性</p><p>R（Relevant）：目标必须和其它目标具有相关性</p><p>T（Time-based）：目标具有明确的截止期限</p><p><strong>知识管理</strong></p><h4 id="工具：xmind、有道云笔记、印象笔记、Blog、GitHub、CSDN、testerhome-51testing等"><a href="#工具：xmind、有道云笔记、印象笔记、Blog、GitHub、CSDN、testerhome-51testing等" class="headerlink" title="工具：xmind、有道云笔记、印象笔记、Blog、GitHub、CSDN、testerhome,51testing等"></a>工具：xmind、有道云笔记、印象笔记、Blog、GitHub、CSDN、testerhome,51testing等</h4><hr><p>[TOC]</p><h2 id="思考"><a href="#思考" class="headerlink" title="思考"></a>思考</h2><p>今天完成了什么内容、明天需要做什么</p><p>自己哪些方面做得好，哪些做得不够好，下次需要改进</p><p>近期工作计划、学习计划（制定todolist）</p><p>职业规划</p><p>人生规划</p><h2 id="沟通"><a href="#沟通" class="headerlink" title="沟通"></a>沟通</h2><p>敢于沟通：主动了解和听取对方的想法，敢于表达自己的观点</p><p>勤于沟通：多和别人交流自己的意见和想法</p><p>善于沟通：提升沟通技巧和效率</p><h3 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h3><h5 id="抓包工具"><a href="#抓包工具" class="headerlink" title="抓包工具"></a>抓包工具</h5><p>fiddler，Charles，wireshark</p><h5 id="缺陷管理工具"><a href="#缺陷管理工具" class="headerlink" title="缺陷管理工具"></a>缺陷管理工具</h5><p>jira，禅道</p><h5 id="文档协作管理工具"><a href="#文档协作管理工具" class="headerlink" title="文档协作管理工具"></a>文档协作管理工具</h5><p>wiki–协同创作超文本系统 ，Docs–在线协作编辑工具，Xmind–思维导图软件，tower</p><h5 id="接口测试工具"><a href="#接口测试工具" class="headerlink" title="接口测试工具"></a>接口测试工具</h5><p>postman，HttpRequester，Yapi</p><h5 id="压力测试工具"><a href="#压力测试工具" class="headerlink" title="压力测试工具"></a>压力测试工具</h5><p>Jmeter，LoadRunner</p><h5 id="安全测试工具"><a href="#安全测试工具" class="headerlink" title="安全测试工具"></a>安全测试工具</h5><p>AWVS–网站及服务器漏洞扫描软件<br>sqlmap–检测与利用SQL注入漏洞的免费开源工具<br>Nmap–网络扫描和嗅探工具</p><h5 id="客户端测试"><a href="#客户端测试" class="headerlink" title="客户端测试"></a>客户端测试</h5><p>adb命令，系统版本兼容，屏幕分辨率兼容，屏幕类型兼容（普通屏幕、全面屏、刘海屏、挖孔屏等），导航栏类型兼容（虚拟导航栏、手势导航栏、mBack导航栏等），厂商兼容</p><h5 id="服务端测试"><a href="#服务端测试" class="headerlink" title="服务端测试"></a>服务端测试</h5><h5 id="自动化测试"><a href="#自动化测试" class="headerlink" title="自动化测试"></a>自动化测试</h5><p><strong>UI自动化测试</strong></p><p><strong>Android自动化测试</strong><br>UIAutomator<br>appium（基于webdriver框架）<br>uiautomator2（轻量级，仅支持Android） -AirTest：<a href="http://airtest.netease.com/" target="_blank" rel="noopener">http://airtest.netease.com/</a><br><strong>iOS自动化测试</strong><br>WebDriverAgent<br>appium（基于WebDriverAgent框架） -AirTest：<a href="http://airtest.netease.com/" target="_blank" rel="noopener">http://airtest.netease.com/</a><br><strong>Web自动化测试</strong><br>Selenium<br><strong>微信小程序自动化测试</strong><br>ChromeDriver<br><strong>接口自动化</strong><br>Python+request<br>Robot Framework<br>HttpRunner<br>Postman+Newman<br>Jmeter+Ant<br>Vue+Flask&amp;Django<br><strong>专项测试<em>8<br>app性能测试<br>PerfDog：<a href="https://testerhome.com/topics/21137" target="_blank" rel="noopener">https://testerhome.com/topics/21137</a><br>adb（安卓）<br>ffmpeg（音视频）<br>*</em>H5性能测试<em>8<br>Chrome Devtool<br>W3C Performance API<br>*</em>稳定性测试</strong><br>Monkey<br>MonkeyRunner<br>MonkeyScript<br><strong>弱网测试</strong><br>Charles<br>AppCrawler<br><strong>耗电量分析</strong><br>dumpsys batterystatus<br>Battery-Historian<br>BugReport<br><strong>流量分析</strong><br>Proxy<br>TCPDUMP<br><strong>性能测试</strong><br>内存<br>Android Studio Profile<br>PerfDog<br>leakCanary<br>CPU<br>Android Studio Profile<br>Android Monitor<br>PerfDog<br>iOS Instruments<br>卡顿分析<br>Systrace<br>Overdraw</p><h4 id="编程相关"><a href="#编程相关" class="headerlink" title="编程相关"></a>编程相关</h4><h5 id="IDE"><a href="#IDE" class="headerlink" title="IDE"></a>IDE</h5><p>PyCharm — Python  ，Sublime – shell</p><h4 id="Python"><a href="#Python" class="headerlink" title="Python"></a>Python</h4><p>unittest，pytest，request</p><h4 id="shell"><a href="#shell" class="headerlink" title="shell"></a>shell</h4><p>linux基本命令（find、netstat、ps等）<br>linux三剑客<br>grep<br>awk<br>sed</p><h4 id="代码版本控制"><a href="#代码版本控制" class="headerlink" title="代码版本控制"></a>代码版本控制</h4><p>git，svn</p><h4 id="DataBase"><a href="#DataBase" class="headerlink" title="DataBase"></a>DataBase</h4><p>MySQL，MongoDB</p><h4 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h4><p>Python正则表达式  ，shell编程之正则表达式:<a href="http://www.imooc.com/learn/378" target="_blank" rel="noopener">http://www.imooc.com/learn/378</a></p><h4 id="持续集成-amp-持续交付"><a href="#持续集成-amp-持续交付" class="headerlink" title="持续集成&amp;持续交付"></a>持续集成&amp;持续交付</h4><p>Jenkins<br>Docker</p><h4 id="平台开发"><a href="#平台开发" class="headerlink" title="平台开发"></a>平台开发</h4><p>Vue.js<br>Nodejs<br>Python Django/Flask</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>测试必备技能</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>测试</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>H5页面测试</title>
+    <link href="undefined2020/01/23/H5%E9%A1%B5%E9%9D%A2%E6%B5%8B%E8%AF%95/"/>
+    <url>2020/01/23/H5%E9%A1%B5%E9%9D%A2%E6%B5%8B%E8%AF%95/</url>
+    
+    <content type="html"><![CDATA[<p>[TOC]</p><h2 id="H5的介绍"><a href="#H5的介绍" class="headerlink" title="H5的介绍"></a>H5的介绍</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">H5是HTML5简称，是最新的web端开发语言版本，是移动端的web页面；从广义上来说，HTML5是包括HTML,CSS,JS在内的一套技术组合；</span><br><span class="line"></span><br><span class="line">HTML负责网页的具体内容和结构；CSS网页的样式，主要负责美化，JS负责网页的交付效果，比如对用户鼠标点击事件作出相应；</span><br><span class="line"></span><br><span class="line">H5应用的地方：APP的活动专题页面，新闻网页，微信公众号文章页面，在PC或者手机浏览器都可以直接访问H5页面；</span><br><span class="line"></span><br><span class="line">优点：可以跨平台使用，开发成本相对较低，可随时上线更新版本，适合快速迭代，可以轻量的触达用户，提供更便捷的服务</span><br></pre></td></tr></table></figure><h2 id="如何识别H5？"><a href="#如何识别H5？" class="headerlink" title="如何识别H5？"></a>如何识别H5？</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>长按页面，看会不会有震动（andriod）或者出现文字选择粘贴(andriod/ios)；</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span>横竖屏相互切换，能自适应且布局不会乱掉；</span><br></pre></td></tr></table></figure><h2 id="测试关注点？"><a href="#测试关注点？" class="headerlink" title="测试关注点？"></a>测试关注点？</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>业务逻辑测试，跟业务需求来定；</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span>页面元素ui测试（文字，图片，页面布局等测试）</span><br><span class="line"></span><br><span class="line">文字：风格是否一致，错别字，标点符号统一，换行是否显示正常，一行长文字是省略显示还是全显示，图片与文字是否一致，刷新页面文字是否展示；</span><br><span class="line"></span><br><span class="line">图片：静态（大小，格式），动态（大小，风格，准确性动态图，转场动画，loading动画，点击动画等），图片适配（不同屏幕和分辨率进行适配）；</span><br><span class="line"></span><br><span class="line">页面布局：页面文字图片是否能自适应屏幕，整体布局是否合理等；</span><br><span class="line"></span><br><span class="line">内嵌链接：空链接，刷新链接数据是否展示，链接跳转是否正确；</span><br><span class="line"></span><br><span class="line"><span class="number">3.</span>页面操作（刷新与返回，翻页，弹窗出现/关闭，浮层页面，页面提示，手机操作相关）</span><br><span class="line"></span><br><span class="line">刷新与返回：页面刷新是否仍然处于当前页面，用户主动点击刷新按钮是否仍处于当前页面，点击返回，回退页面是否是期望页面；</span><br><span class="line"></span><br><span class="line">翻页：遇到翻页加载的页面，需要注意内容为一页或多页的情况；数据分页加载时，注意后续页面请求数据的正确；快速操作场景中，请求页数是不是依次递增（如第一页尚未加载出来的时候仍然继续上拉操作时是否发出对应的请求）；</span><br><span class="line"></span><br><span class="line">页面的提示：弱网络下，数据加载较慢，是否有对应的loading提示；接口获取异常时，提示是否合理；刷新页面或加载新内容时页面是否有抖动；</span><br><span class="line"></span><br><span class="line">手机操作相关：锁屏知乎展示的页面；退到后台再重新呼出在前台展示；</span><br><span class="line"></span><br><span class="line"><span class="number">4.</span>适配测试</span><br><span class="line"></span><br><span class="line">图片高清适配，字体大小适配，页面布局宽度适配，横竖屏适配（考虑：不同屏幕尺寸和分辨率的机型进行适配，不同平台安卓和iOS进行适配，横竖屏适配，日夜间模式适配，深色浅色模式适配（iOS13系统））；</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>H5</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>H5</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>Web自动化测试</title>
     <link href="undefined2020/01/22/Web%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/"/>
     <url>2020/01/22/Web%E8%87%AA%E5%8A%A8%E5%8C%96%E6%B5%8B%E8%AF%95/</url>
@@ -23,6 +73,31 @@
       <tag>web</tag>
       
       <tag>自动化测试</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>web测试</title>
+    <link href="undefined2020/01/22/web%E6%B5%8B%E8%AF%95/"/>
+    <url>2020/01/22/web%E6%B5%8B%E8%AF%95/</url>
+    
+    <content type="html"><![CDATA[<p>[TOC]</p><h2 id="web项目测试"><a href="#web项目测试" class="headerlink" title="web项目测试"></a>web项目测试</h2><h3 id="表单测试"><a href="#表单测试" class="headerlink" title="表单测试"></a>表单测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">a、表单数据的字段、完整性及表单输入框的长度限制问题</span><br><span class="line"></span><br><span class="line">b、一些常理性逻辑验证，比如：出生日期和职业，工作年限是否恰当，所在地省份城市区域间的匹配等，如果设定使用默认值，也需要测试。</span><br></pre></td></tr></table></figure><h3 id="导航测试"><a href="#导航测试" class="headerlink" title="导航测试"></a>导航测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">导航测试，就是在不同的页面跳转之间，或者按钮、对话框、列表以及窗口等，通过考虑这些因素去判断一个应用是否易于导航：是否直观？系统的主要模块是否可以通过主页访问或者到达？站点是否需要站内地图或者搜索引擎等其他帮助？web系统导航的另外一个重点就是页面结构、导航、菜单、风格等是否一致，确保用户可以凭借直觉或者简单的判断就可以找到自己想要的内容。（参考博客http://www.cnblogs.com/imyalost/p/<span class="number">5622867.</span>html）</span><br></pre></td></tr></table></figure><h3 id="UI测试"><a href="#UI测试" class="headerlink" title="UI测试"></a>UI测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">UI测试，其中包括图片、动画、边框、颜色、字体、背景、按钮等等。</span><br><span class="line"></span><br><span class="line">a、图片要有明确的用途，代表；图片尺寸尽量小，一般采用JPG或者GIF压缩（即规格大小的限制）</span><br><span class="line"></span><br><span class="line">b、页面整体风格是否和系统的用途一致</span><br><span class="line">c、背景颜色，字体，搭配是否合理</span><br><span class="line"></span><br><span class="line">页面元素展示（调整浏览器窗口大小）</span><br><span class="line">列表展示</span><br><span class="line">分页展示（更改分页大小，上下页切换）</span><br><span class="line">图片展示</span><br><span class="line">输入框</span><br><span class="line">搜索框（是否支持模糊查询，查询数据前中后存在空格）</span><br><span class="line">交互提示（操作成功提示，操作确认提示，错误提示</span><br></pre></td></tr></table></figure><h3 id="内容测试"><a href="#内容测试" class="headerlink" title="内容测试"></a>内容测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">这个主要用来检测web系统提供信息的准确性、相关性。</span><br><span class="line"></span><br><span class="line">比如：商品的价格，文字描述；信息的准确性，是否有拼写错误；（这点比较容易忽略，需要多注意）信息的相关性，比如很多网站的“相关文章列表，视频列表等”</span><br></pre></td></tr></table></figure><h3 id="整体界面测试"><a href="#整体界面测试" class="headerlink" title="整体界面测试"></a>整体界面测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">整体界面测试</span><br><span class="line"></span><br><span class="line">a、 这个也就是我们常说的用户体验。用户浏览时是否感觉舒适，整体风格等等</span><br><span class="line"></span><br><span class="line">b、建议一般做一个类似问卷调查的形式，来判定用户的反馈信息，最好有最终用户的参与，可参考类似的笔记哦啊普遍的系统风格是怎样的，结合实际来考虑本测试系统的风格</span><br></pre></td></tr></table></figure><h3 id="链接测试"><a href="#链接测试" class="headerlink" title="链接测试"></a>链接测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">链接测试（平时在测试过程中并不关注，而是在权限分配的安全测试中比较注重，主要是不同权限的人分享的链接是否能正确过滤，保证安全）</span><br></pre></td></tr></table></figure><h3 id="输入框的测试"><a href="#输入框的测试" class="headerlink" title="输入框的测试"></a>输入框的测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">输入框测试（粘贴博客http://www.cnblogs.com/imyalost/p/<span class="number">5622867.</span>html）</span><br><span class="line"></span><br><span class="line">在web测试中，我们经常遇到这种输入框的测试，输入框测试看似简单，实际上包含了很多的测试基本的方法，思考逻辑，下面就是我总结出来的一些注意点：</span><br><span class="line"></span><br><span class="line">       <span class="number">1</span>）验证输入输出信息的一致性</span><br><span class="line"></span><br><span class="line">       <span class="number">2</span>）输入框前面的文字提示是否正确</span><br><span class="line"></span><br><span class="line">       <span class="number">3</span>）对特殊字符的处理、识别：单双引号，括号，逗号、分号等等，以及大小写状态，半角全角状态下的情况</span><br><span class="line"></span><br><span class="line">       <span class="number">4</span>）输入框的大小、长度、边框等</span><br><span class="line"></span><br><span class="line">       <span class="number">5</span>）不同字符的输入，以及字符组合情况的处理（数字+字母+字符等）</span><br><span class="line"></span><br><span class="line">       <span class="number">6</span>）对空格、tab换行键的处理机制</span><br><span class="line"></span><br><span class="line">       <span class="number">7</span>）密码输入框字符星号或者其他星号的转行，加密</span><br><span class="line"></span><br><span class="line">       <span class="number">8</span>）输入框输入字符长度是否有限制</span><br><span class="line"></span><br><span class="line">       <span class="number">9</span>）字符本身显示的颜色，规格等</span><br><span class="line"></span><br><span class="line">       <span class="number">10</span>）有些输入框需要加以限制，如输错，是否有提示？提示是否简单合理？</span><br><span class="line"></span><br><span class="line">       <span class="number">11</span>）输入状态，某种情况下输入框出于不可编辑，当再次处于编辑状态，输入框的输入状态是否有变化？</span><br><span class="line"></span><br><span class="line">       <span class="number">12</span>）输入类型：是否允许复制黏贴剪切等输入操作</span><br><span class="line"></span><br><span class="line">       <span class="number">13</span>）关键字是否支持通配符，以及关键字的搜索能力，敏感字等情况</span><br><span class="line"></span><br><span class="line">       <span class="number">14</span>）输入框输入空格的情况</span><br><span class="line"></span><br><span class="line">       <span class="number">15</span>）比如登陆注册，各项输入条件的判定：是否输入，输入是否正确等</span><br></pre></td></tr></table></figure><h3 id="用户权限测试"><a href="#用户权限测试" class="headerlink" title="用户权限测试"></a>用户权限测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">用户权限测试（粘贴博客http://www.cnblogs.com/imyalost/p/<span class="number">5622867.</span>html）</span><br><span class="line"></span><br><span class="line">用户权限，顾名思义，就是该账号拥有哪些执行操作的权利</span><br><span class="line"></span><br><span class="line">       <span class="number">1</span>）给某账号赋予权限后，登陆该账号，查看是否拥有已赋予的权限，以及权限设置是否正确（权限是否超过或者不足）</span><br><span class="line"></span><br><span class="line">       <span class="number">2</span>）删除或修改已经登陆并且正在执行操作的账号权限，程序能否正确处理，验证</span><br><span class="line"></span><br><span class="line">       <span class="number">3</span>）重新注册系统变更登陆身份后再登陆，程序能否正确执行，之前所拥有的权限能否继续使用</span><br><span class="line"></span><br><span class="line">       <span class="number">4</span>）在用工作分配或者角色管理情况下，删除包含用户的工作组或者角色，程序能否正确处理</span><br><span class="line"></span><br><span class="line">       <span class="number">5</span>）不同权限账号登陆同一个系统，权限范围是否正确</span><br><span class="line"></span><br><span class="line">       <span class="number">6</span>）能否给信息为空、长用户名的账号添加权限</span><br><span class="line"></span><br><span class="line">       <span class="number">7</span>）是否允许删除系统管理员或者修改管理员权限？删除或者修改后的实际情况</span><br><span class="line"></span><br><span class="line">       <span class="number">8</span>）已登录的用户能否修改或者删除自己或者他人的权限，信息</span><br><span class="line"></span><br><span class="line">       <span class="number">9</span>）添加用户（有编号或者标识），不同用户名标识的组合情况下，权限能否处理正确</span><br><span class="line"></span><br><span class="line">       <span class="number">10</span>）修改用户权限或者信息后，对其他模块是否有影响</span><br><span class="line"></span><br><span class="line">       <span class="number">11</span>）如果修改用户信息为和已存在的其他用户信息相同，能否修改成功？是否有对应提示？</span><br><span class="line"></span><br><span class="line">       <span class="number">12</span>）修改某些设置，是否会对与该账号权限相同或者高于/低于该账号的其他账号的权限造成影响</span><br><span class="line"></span><br><span class="line">       <span class="number">13</span>）同一用户是否可以同时属于其他组，各个组的权限能否交叉？</span><br></pre></td></tr></table></figure><h3 id="浏览器兼容测试"><a href="#浏览器兼容测试" class="headerlink" title="浏览器兼容测试"></a>浏览器兼容测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line">兼容性测试：（参考博客http://www.cnblogs.com/imyalost/p/<span class="number">5622867.</span>html）</span><br><span class="line"></span><br><span class="line">a、平台兼容</span><br><span class="line"></span><br><span class="line">在有很多的操作系统，比如Windows、Unix、Linux、macintosh等；用户使用哪个系统取决于用户，因此，系统兼容测试就很有必要了。</span><br><span class="line"> 浏览器是web客户端最核心的组件，不同的浏览器，对Java，JavaScript，css或者HTML的规格都有不同的支持；</span><br><span class="line"></span><br><span class="line"> 另外，采用的框架和结构风格在不同浏览器中也存在不同的显示甚至不显示，不同的浏览器对安全性的设置也是不同的。</span><br><span class="line"></span><br><span class="line"> 测试浏览器兼容，有个方法就是创建一个兼容性矩阵，来测试不同厂商不同版本的浏览器兼容。</span><br><span class="line"></span><br><span class="line">  比如测试IE浏览器，可以通过一个叫做IEtester的工具来测试兼容，或者可以通过F12控制台来切换浏览器版本来测试兼容以前一些前端元素的显示等</span><br><span class="line"></span><br><span class="line">  鉴于国内市场浏览器很多，比如<span class="number">360</span>、搜狗，搜狐、QQ浏览器等，这些本土的浏览器基本都采用的IE浏览器内核的双核配置</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">浏览器（PC端）（注意浏览器的兼容模式和疾速模式）：</span><br><span class="line">IE浏览器，Chrome，Firefox，<span class="number">360</span>安全浏览器，<span class="number">360</span>疾速浏览器，搜狗浏览器，QQ浏览器，百度浏览器，猎豹浏览器</span><br><span class="line">浏览器（移动端）：是否兼容移动端浏览器访问</span><br><span class="line">操作系统：</span><br><span class="line">Windows7，Windows8（Windows8<span class="number">.1</span>）,Windows10</span><br><span class="line">Linux</span><br><span class="line">MacOS</span><br><span class="line">服务端升级：对旧数据的兼容</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">**浏览器的兼容性测试，需要考虑哪些方面？**</span><br><span class="line"></span><br><span class="line">IE6、IE7、IE8、IE9，FireFox，safari，chrome、opera</span><br><span class="line"></span><br><span class="line">国内的浏览器：如搜狗、<span class="number">360</span>、QQ、百度、<span class="number">2345</span>浏览器，UC浏览器，猎豹，遨游，世界之窗浏览器等</span><br><span class="line"></span><br><span class="line">**浏览器兼容性测试的工具**</span><br><span class="line"></span><br><span class="line">IE Tester专门用于IE浏览器各个版本中兼容性的工具（IE5<span class="number">.5</span>-IE9）</span><br><span class="line"></span><br><span class="line">Spoon Browser Sandbox:安装插件即可进行测试，主要是测试：safari，谷歌，火狐，opera浏览器</span><br><span class="line"></span><br><span class="line">Browser Shots，（支持浏览器种类和版本很丰富，但需要验证的应用或应用中包含的页面太多，这个软件就不太好使用）</span><br></pre></td></tr></table></figure><h3 id="功能测试"><a href="#功能测试" class="headerlink" title="功能测试"></a>功能测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">页面跳转，前进，后退，返回，刷新（强制刷新）</span><br><span class="line">数据修改：新增，删除，更新</span><br><span class="line">文件操作：上传，下载，文件类型，文件大小</span><br></pre></td></tr></table></figure><h3 id="安全测试"><a href="#安全测试" class="headerlink" title="安全测试"></a>安全测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">安全测试：</span><br><span class="line"></span><br><span class="line">安全测试的主要区域有以下几点：</span><br><span class="line"></span><br><span class="line">a、现在很多web应用系统都采用先注册后登录的方式，因此，测试用户名和密码的有效无效性，注意大小写敏感，次数限制，是否可以不登录而浏览某些页面等</span><br><span class="line"></span><br><span class="line">b、是否有超时限制，链接分享，cookie劫持</span><br><span class="line"></span><br><span class="line">c、测试用户操作时相关信息是否写入了日志文件、是否可追踪等</span><br><span class="line"></span><br><span class="line">d、如果使用了安全套字，需要测试加密是否正确，加密前后的信息完整性，正确性</span><br><span class="line"></span><br><span class="line">e、没有经过授权，是否可以在服务器端或者前端放置和编辑脚本的问题</span><br><span class="line"></span><br><span class="line">f、输入框的SQL注入验证</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>功能测试</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>web项目</tag>
       
     </tags>
     
@@ -54,7 +129,7 @@
   
   
   <entry>
-    <title>Postman使用教程</title>
+    <title>Postman使用心得</title>
     <link href="undefined2020/01/14/Postman%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/"/>
     <url>2020/01/14/Postman%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</url>
     
@@ -71,6 +146,58 @@
     <tags>
       
       <tag>Postman</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>性能测试</title>
+    <link href="undefined2020/01/14/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/"/>
+    <url>2020/01/14/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/</url>
+    
+    <content type="html"><![CDATA[<p>[TOC]</p><h2 id="App的性能测试注意点"><a href="#App的性能测试注意点" class="headerlink" title="App的性能测试注意点"></a>App的性能测试注意点</h2><p>评估App的时间和空间特性 ：</p><p>1)极限测试：在各种边界压力情况下，如电池、存储、网速等，验证App是否能正确响应。</p><p>–内存满时安装App</p><p>–运行App时手机断电</p><p>–运行App时断掉网络</p><p>2)响应能力测试：测试App中的各类操作是否满足用户响应时间要求 。（安装包放到云测上可以测试）</p><p>–App安装、卸载的响应时间</p><p>–App各类功能性操作的影响时间</p><p>3)压力测试：反复/长期操作下、系统资源是否占用异常。（itestin）</p><p>–App反复进行安装卸载，查看系统资源是否正常</p><p>–其他功能反复进行操作，查看系统资源是否正常</p><p>4)性能评估：评估典型用户应用场景下，系统资源的使用情况。（Jmeter）</p><p>###PerfDog</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>Android/iOS移动应用的性能测试工具</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span>PerfDog支持基于云端的看 板，可以存储、管理PerfDog收集的所有测试数据。可以对应用的APP，游戏，小程序，H5，web，进行CPU和内存实时监测，并且还支持手机温度、电量、网络、FPS等指标的测试和监控，真的算是功能完备的性能测试工具，满足了大部分性能测试的需求，极大的提升了性能测试的效率，PerfDog是由WeTest腾讯质量开放平台发行，能快速定位分析性能问题，提升APP应用及游戏性能和品质，手机无需ROOT/越狱，手机硬件、游戏及应用无需做任何更改，极简化即插即用。</span><br><span class="line"></span><br><span class="line"><span class="number">3.</span>PerfDog官网：perfdog.qq.com</span><br><span class="line"></span><br><span class="line"><span class="number">4.</span>腾讯WeTest官网：wetest.qq.com</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>性能测试</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>PerfDog</tag>
+      
+      <tag>性能测试</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>运营相关</title>
+    <link href="undefined2020/01/14/%E8%BF%90%E8%90%A5%E7%9B%B8%E5%85%B3/"/>
+    <url>2020/01/14/%E8%BF%90%E8%90%A5%E7%9B%B8%E5%85%B3/</url>
+    
+    <content type="html"><![CDATA[<p>[TOC]</p><h2 id="投放"><a href="#投放" class="headerlink" title="投放"></a>投放</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">市场投放？把我们的微信号放到别人的公众号上</span><br><span class="line">产品运营？在自己的公众号上发自己的广告</span><br><span class="line">公众号</span><br><span class="line">信息流：在抖音，知乎上投放的广告</span><br><span class="line">广告式转化（关注通知）和交互式转化（群，个人号）</span><br><span class="line">投放的<span class="number">4</span>个小时之后，<span class="number">48</span>小时之后失效</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <categories>
+      
+      <category>运营</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>运营</tag>
       
     </tags>
     
@@ -264,19 +391,6 @@
   
   
   <entry>
-    <title></title>
-    <link href="undefined2019/11/06/H5%E6%B5%8B%E8%AF%95/"/>
-    <url>2019/11/06/H5%E6%B5%8B%E8%AF%95/</url>
-    
-    <content type="html"><![CDATA[<p>H5是HTML5简称，是最新的web端开发语言版本，是移动端的web页面；从广义上来说，HTML5是包括HTML,CSS,JS在内的一套技术组合；<br>HTML负责网页的具体内容和结构；CSS网页的样式，主要负责美化，JS负责网页的交付效果，比如对用户鼠标点击事件作出相应；<br>H5应用的地方：APP的活动专题页面，新闻网页，微信公众号文章页面，在PC或者手机浏览器都可以直接访问H5页面；<br>优点：可以跨平台使用，开发成本相对较低，可随时上线更新版本，适合快速迭代，可以轻量的触达用户，提供更便捷的服务</p><p>如何识别H5？<br>1.长按页面，看会不会有震动（andriod）或者出现文字选择粘贴(andriod/ios)；<br>2.横竖屏相互切换，能自适应且布局不会乱掉；</p><p>测试关注点？<br>1.业务逻辑测试，跟业务需求来定；<br>2.页面元素ui测试（文字，图片，页面布局等测试）<br>文字：风格是否一致，错别字，标点符号统一，换行是否显示正常，一行长文字是省略显示还是全显示，图片与文字是否一致，刷新页面文字是否展示；<br>图片：静态（大小，格式），动态（大小，风格，准确性动态图，转场动画，loading动画，点击动画等），图片适配（不同屏幕和分辨率进行适配）；<br>页面布局：页面文字图片是否能自适应屏幕，整体布局是否合理等；<br>内嵌链接：空链接，刷新链接数据是否展示，链接跳转是否正确；<br>3.页面操作（刷新与返回，翻页，弹窗出现/关闭，浮层页面，页面提示，手机操作相关）<br>刷新与返回：页面刷新是否仍然处于当前页面，用户主动点击刷新按钮是否仍处于当前页面，点击返回，回退页面是否是期望页面；<br>翻页：遇到翻页加载的页面，需要注意内容为一页或多页的情况；数据分页加载时，注意后续页面请求数据的正确；快速操作场景中，请求页数是不是依次递增（如第一页尚未加载出来的时候仍然继续上拉操作时是否发出对应的请求）；<br>页面的提示：弱网络下，数据加载较慢，是否有对应的loading提示；接口获取异常时，提示是否合理；刷新页面或加载新内容时页面是否有抖动；<br>手机操作相关：锁屏知乎展示的页面；退到后台再重新呼出在前台展示；<br>4.适配测试<br>图片高清适配，字体大小适配，页面布局宽度适配，横竖屏适配（考虑：不同屏幕尺寸和分辨率的机型进行适配，不同平台安卓和iOS进行适配，横竖屏适配，日夜间模式适配，深色浅色模式适配（iOS13系统））；</p>]]></content>
-    
-    
-    
-  </entry>
-  
-  
-  
-  <entry>
     <title>接口测试</title>
     <link href="undefined2019/10/07/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/"/>
     <url>2019/10/07/%E6%8E%A5%E5%8F%A3%E6%B5%8B%E8%AF%95/</url>
@@ -427,7 +541,7 @@
   
   
   <entry>
-    <title>Charles手机和浏览器抓包</title>
+    <title>Charles</title>
     <link href="undefined2019/08/27/Charles/"/>
     <url>2019/08/27/Charles/</url>
     
