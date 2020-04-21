@@ -119,7 +119,7 @@
                   
                   &nbsp;<i class="far fa-chart-bar"></i>
                   <span class="post-count">
-                    6.1k 字
+                    6.3k 字
                   </span>&nbsp;
                 
 
@@ -127,7 +127,7 @@
                   
                   &nbsp;<i class="far fa-clock"></i>
                   <span class="post-count">
-                      20 分钟
+                      21 分钟
                   </span>&nbsp;
                 
 
@@ -203,6 +203,8 @@
 <h3 id="定位，照相机服务测试"><a href="#定位，照相机服务测试" class="headerlink" title="定位，照相机服务测试"></a>定位，照相机服务测试</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">定位、照相机服务 </span><br><span class="line"></span><br><span class="line"><span class="number">1</span>) App有用到相机，定位服务时，需要注意系统版本差异 </span><br><span class="line"></span><br><span class="line"><span class="number">2</span>) 有用到定位服务、照相机服务的地方，需要进行前后台的切换测试，检查应用是否正常。 </span><br><span class="line"></span><br><span class="line"><span class="number">3</span>) 当定位服务没有开启时，使用定位服务，会友好性弹出是否允许设置定位提示。当确定允许开启定位时，能自动跳转到定位设置中开启定位服务。 </span><br><span class="line"></span><br><span class="line"><span class="number">4</span>) 测试定位、照相机服务时，需要采用真机进行测试。</span><br></pre></td></tr></table></figure>
 
 <h3 id="app上线后舆情的跟踪"><a href="#app上线后舆情的跟踪" class="headerlink" title="app上线后舆情的跟踪"></a>app上线后舆情的跟踪</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">新app上线之后，用户对此应用的评价，存在哪些测试期间未发现的bug；</span><br></pre></td></tr></table></figure>
+
+<h3 id="APP中接入第三方支付功能测试注意点"><a href="#APP中接入第三方支付功能测试注意点" class="headerlink" title="APP中接入第三方支付功能测试注意点"></a>APP中接入第三方支付功能测试注意点</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">正常流程：</span><br><span class="line">　　正常使用支付宝、微信、银行卡（目前使用最多的第三方支付方式）支付（正常金额的支付），功能是否正常。</span><br><span class="line"></span><br><span class="line">异常流程：</span><br><span class="line">　　<span class="number">1</span>、支付账号和密码错误，系统如何处理；</span><br><span class="line"></span><br><span class="line">　　<span class="number">2</span>、余额不足，系统如何处理；</span><br><span class="line"></span><br><span class="line">　　<span class="number">3</span>、取消支付，系统如何处理；</span><br><span class="line"></span><br><span class="line">　　<span class="number">4</span>、重复支付，系统如何处理；</span><br><span class="line"></span><br><span class="line">　　<span class="number">5</span>、微信或支付宝账号未登录时支付，系统如何处理；</span><br><span class="line"></span><br><span class="line">　　<span class="number">6</span>、手机上没有支付宝APP时选择支付宝支付，系统如何处理；</span><br><span class="line"></span><br><span class="line">　　<span class="number">7</span>、支付期间突然断网，系统如何处理；</span><br><span class="line"></span><br><span class="line">　　<span class="number">8</span>、取消支付后再次支付，系统如何处理；</span><br><span class="line"></span><br><span class="line">　　<span class="number">9</span>、金额上：最小值金额的支付，最大值金额的支付，错误金额的支付（如金额格式的错误、不允许使用的货币等等）；</span><br></pre></td></tr></table></figure>
 
 
             <hr>
