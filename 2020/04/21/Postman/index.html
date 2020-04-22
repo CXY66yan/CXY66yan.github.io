@@ -14,7 +14,7 @@
   <meta name="description" content>
   <meta name="author" content="陈孝艳">
   <meta name="keywords" content>
-  <title>功能测试.md ~ missyan的博客</title>
+  <title>Postman操作步骤 ~ missyan的博客</title>
 
   <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
 <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
@@ -110,7 +110,7 @@
               
                 <p class="mt-3">
                   <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
-                  Saturday, January 4th 2020, 4:14 pm
+                  Tuesday, April 21st 2020, 6:51 pm
                 </p>
               
 
@@ -119,7 +119,7 @@
                   
                   &nbsp;<i class="far fa-chart-bar"></i>
                   <span class="post-count">
-                    1.2k 字
+                    3 字
                   </span>&nbsp;
                 
 
@@ -127,7 +127,7 @@
                   
                   &nbsp;<i class="far fa-clock"></i>
                   <span class="post-count">
-                      4 分钟
+                      1 分钟
                   </span>&nbsp;
                 
 
@@ -160,49 +160,8 @@
       <div class="py-5 z-depth-3" id="board">
         <div class="post-content mx-auto" id="post">
           <div class="markdown-body">
-            <hr>
-<p>[TOC]</p>
-<h2 id="测试理论"><a href="#测试理论" class="headerlink" title="测试理论"></a>测试理论</h2><h3 id="软件开发模型"><a href="#软件开发模型" class="headerlink" title="软件开发模型"></a>软件开发模型</h3><h4 id="瀑布模型"><a href="#瀑布模型" class="headerlink" title="瀑布模型"></a>瀑布模型</h4><p><strong>模型：</strong>需求分析-概要设计-详细设计-编码-软件测试-软件维护</p>
-<p><strong>优点：</strong>线性模型，是其他模型的基础，文档驱动；开发的各个阶段比较清晰，当前阶段完成之后只需关注后续阶段</p>
-<p><strong>缺点：</strong>风险后延，不适应需求的变化</p>
-<h4 id="快速原型"><a href="#快速原型" class="headerlink" title="快速原型"></a>快速原型</h4><p><strong>模型：</strong>快速分析-构造-运行-评价-快速分析-构造-运行-评价-快速分析…</p>
-<p><strong>特点：</strong>在开发真实系统之前先构造一个原型，在该原型的基础上，逐渐完成整个系统的开发工作</p>
-<p><strong>优点：</strong>支持用户参与，适应需求变化，减少由于需求不明带来的项目开发风险</p>
-<p>####螺旋模型</p>
-<p><strong>优点：</strong>引进了风险分析活动</p>
-<p><strong>缺点：</strong>需要丰富的风险评估经验和专业知识</p>
-<h3 id="软件测试模型"><a href="#软件测试模型" class="headerlink" title="软件测试模型"></a>软件测试模型</h3><p>####v模型</p>
-<p><strong>示意图：</strong>需求分析-概要设计-详细设计-编码-单元测试-集成测试-系统测试-验收测试</p>
-<p><strong>缺点：</strong>返工量大，灵活性比较低</p>
-<h4 id="w模型"><a href="#w模型" class="headerlink" title="w模型"></a>w模型</h4><p><strong>示意图：</strong>需求分析（验收/系统测试设计）-概要设计（集成测试设计）-详细设计（单元测试设计）-编码（单元测试）-集成（集成测试）-实施（系统测试）-交付（验收测试）</p>
-<p><strong>优点：</strong>测试伴随着整个软件的开发周期，早介入，早发现，早修复且不仅对程序，文档和设计也进行测试</p>
-<p>####H模型</p>
-<p><strong>示意图：</strong>测试准备-测试就绪点-测试执行</p>
-<h2 id="软件测试的分类"><a href="#软件测试的分类" class="headerlink" title="软件测试的分类"></a>软件测试的分类</h2><h3 id="按阶段划分"><a href="#按阶段划分" class="headerlink" title="按阶段划分"></a>按阶段划分</h3><p><strong>单元测试：</strong>针对软件设计中的最小单位-程序模块，进行正确性检查的测试工作</p>
-<p><strong>集成测试：</strong>在单元测试的基础上，将所有程序模块进行有序的递增的测试，重点测试不同模块的接口部分</p>
-<p><strong>系统测试：</strong>将整个软件系统看作一个整体进行测试，测试的依据是软件需求文档</p>
-<p><strong>验收测试：</strong>检验软件是否符合用户需求的测试</p>
-<p>​    α测试：内部版本，软件开发者内部交流，该版本软件bug较多，普通用户最好不要安装</p>
-<p>​    β 测试：公测版本，对所有用户开放的测试版本 ，软件公司免费发布，用户从相关网站上下载，通过一些专业爱好者的测试，将问题反馈给开发者，开发者进行有针对性的修改</p>
-<p>​    γ测试：软件版本正式发行的候选版本，该版本已经相当成熟了与即将发布的正式版本相差无几，成为正式发布的候选版本</p>
-<h3 id="按是否查看源代码"><a href="#按是否查看源代码" class="headerlink" title="按是否查看源代码"></a>按是否查看源代码</h3><p><strong>黑盒测试:</strong>完全不考虑程序内部结构和内部特性，注重于测试软件的功能需求，只关心软件的输入数据和输出数据</p>
-<p>​    ‘功能测试’：逻辑功能测试，界面测试，安装测试</p>
-<p>​    ‘性能测试’：时间性能，稳定性测试，负载测试，压力测试</p>
-<p><strong>白盒测试：</strong>看源代码和程序结构</p>
-<p><strong>灰盒测试：</strong>介于白盒测试和黑盒测试之间，灰盒测试多用户集成测试阶段，不仅考虑输入和输出还关注程序内部的情况</p>
-<h3 id="按是否运行"><a href="#按是否运行" class="headerlink" title="按是否运行"></a>按是否运行</h3><p><strong>静态测试：</strong>不实际运行被测软件，而只是静态的检查程序代码，界面或文档中可能存在的错误过程</p>
-<p><strong>动态测试：</strong>实际运行被测程序，输入相应的测试数据检查实际输出结果和预期结果是否相符的过程</p>
-<h3 id="按是否自动化"><a href="#按是否自动化" class="headerlink" title="按是否自动化"></a>按是否自动化</h3><p><strong>人工测试/手工测试</strong>：测试人员手动去进行的测试</p>
-<p><strong>自动化测试：</strong>利用代码或工具帮助人工进行测试</p>
-<h3 id="软件测试的其他分类"><a href="#软件测试的其他分类" class="headerlink" title="软件测试的其他分类"></a>软件测试的其他分类</h3><p><strong>冒烟测试：</strong>对系统进行最基本功能的测试，保证基本的功能和流程能走通</p>
-<p><strong>回归测试：</strong>当修复一个bug后，把之前的测试用例在新的代码下进行再次测试</p>
-<p><strong>随机测试：</strong>主要是对被测软件的一些重要功能进行复测，也包括测试哪些当前测试用例没有覆盖到的部分</p>
-<p><strong>探索性测试：</strong>同时设计测试和执行测试，测试人员通过测试不断学习被测系统</p>
-<h2 id="测试用例"><a href="#测试用例" class="headerlink" title="测试用例"></a>测试用例</h2><p>定义：为特定的目的而设计的一组测试输入，执行条件和预期结果的文档</p>
-<h3 id="测试用例的8大要素"><a href="#测试用例的8大要素" class="headerlink" title="测试用例的8大要素"></a>测试用例的8大要素</h3><p>用例编号，用例标题，测试项目，用例级别，预置条件，测试输入，执行步骤，预期结果</p>
-<h3 id="测试用例设计方法"><a href="#测试用例设计方法" class="headerlink" title="测试用例设计方法"></a>测试用例设计方法</h3><p>等价类划分法</p>
-<p>​    有效等价类（满足需求）：</p>
-<p>​    无效等价类（不满足需求）：</p>
+            <p>[TOC]</p>
+<h2 id="首页"><a href="#首页" class="headerlink" title="首页"></a>首页</h2><p><img src="/Users/qingclass/Desktop/CXY66yan.github.io/CxyBlogs/source/_posts/Postman/pos.jpg" srcset="undefined" alt="post"></p>
 
             <hr>
           </div>
@@ -210,15 +169,19 @@
           <div>
             <p>
             
+              <span>
+                <i class="iconfont icon-inbox"></i>
+                
+                  <a class="hover-with-bg" href="/categories/Postman1">Postman1</a>
+                  &nbsp;
+                
+              </span>&nbsp;&nbsp;
+            
             
               <span>
                 <i class="iconfont icon-tag"></i>
                 
-                  <a class="hover-with-bg" href="/tags/%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95">功能测试</a>
-                
-                  <a class="hover-with-bg" href="/tags/%E5%BC%80%E5%8F%91%E6%A8%A1%E5%9E%8B">开发模型</a>
-                
-                  <a class="hover-with-bg" href="/tags/%E6%B5%8B%E8%AF%95%E6%A8%A1%E5%9E%8B">测试模型</a>
+                  <a class="hover-with-bg" href="/tags/Postman1">Postman1</a>
                 
               </span>
             
@@ -370,7 +333,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "功能测试.md&nbsp;",
+        "Postman操作步骤&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
