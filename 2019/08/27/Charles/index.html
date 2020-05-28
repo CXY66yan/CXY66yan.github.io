@@ -119,7 +119,7 @@
                   
                   &nbsp;<i class="far fa-chart-bar"></i>
                   <span class="post-count">
-                    1.3k 字
+                    1.9k 字
                   </span>&nbsp;
                 
 
@@ -127,7 +127,7 @@
                   
                   &nbsp;<i class="far fa-clock"></i>
                   <span class="post-count">
-                      4 分钟
+                      7 分钟
                   </span>&nbsp;
                 
 
@@ -165,13 +165,19 @@
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">打开Charles，点击proxy-点击Mac OS x proxy取消前面的对勾，对勾保存是电脑抓包-点击proxy setting-在enable transparent http proxy 前面打对勾然后点击ok-点击设置保证跟电脑连接的是同一个局域网点击链接的wifi-选择手动-输入服务器的IP（安装了Charles的电脑的IP地址，可在Charles-help-local IP adress中查看）和端口号-点击Charles（⭕️）开始录制按钮，手机这边操作就可以开始抓包了；</span><br></pre></td></tr></table></figure>
 
 <p>##Charles Android/ios手机抓https协议</p>
+<p>博客地址：<a href="https://juejin.im/post/5a1033d2f265da431f4aa81f" target="_blank" rel="noopener">https://juejin.im/post/5a1033d2f265da431f4aa81f</a></p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>电脑端打开Charles-help-ssl proxying-install Charles root certificate</span><br><span class="line"><span class="number">2.</span>下载安装证书，默认路径不需要更改，在钥匙串访问中选择证书双击证书文件-选择始始终信任</span><br><span class="line"><span class="number">3.</span>电脑端打开Charles-help-ssl proxying-install Charles root certificate on a mobile  device <span class="keyword">or</span> remote browers-下载安装证书，默认路径不需要更改，在钥匙串访问中选择证书双击证书文件-选择始始终信任</span><br><span class="line"><span class="number">4.</span>设置手机代理,要抓包的手机与电脑在同一个局域网下（链接同一个Wi-Fi即可），打开手机设置-选择已经连接的Wi-Fi-手动代理-输入安装charles电脑的IP（charles-help-localip address）和端口号（proxy-proxy setting-proxies）</span><br><span class="line"><span class="number">5.</span>手机在浏览器中输入：chls.pro/ssl</span><br><span class="line"><span class="number">6.</span>手机弹出提示：安装配置描述文件，选择允许，即可</span><br></pre></td></tr></table></figure>
 
 <h2 id="Charles过滤"><a href="#Charles过滤" class="headerlink" title="Charles过滤"></a>Charles过滤</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">方法一：打开Charles，页面左下方有一个filters，在里面输入自己想要过滤的内容部分即可</span><br><span class="line"></span><br><span class="line">方法二：菜单栏选择 “Proxy”-&gt;”Recording Settings”，在弹出的窗口中选择 Include 栏，再点击“Add”，在弹出的窗口中输入需要监控的协议，主机地址，端口号等信息，来添加一个项目。</span><br><span class="line"></span><br><span class="line">方法三：在想过滤的网络请求上右击，选择 “Focus”，之后在 Filter 一栏勾选上 Focussed 一项</span><br></pre></td></tr></table></figure>
 
 <p>##Charles模拟弱网测试</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">打开charles-proxy-throttle Settings-勾选Enable settings-在throttle preset中选择要模拟的网路环境，如果没有的话可以自己在下方设置-ok</span><br></pre></td></tr></table></figure>
-
+<p>1.proxy-start Throtting ,点击完之后小乌龟变亮；</p>
+<p>2.proxy-Throttle Setting如下图所示：</p>
+<p><img src="/Users/qingclass/Desktop/CXY66yan.github.io/CxyBlogs/source/_posts/Charles/Snip20200521_51.png" srcset="undefined" alt></p>
+<p>3.点击Throttle Setting进入以下页面：</p>
+<p><img src="/Users/qingclass/Desktop/CXY66yan.github.io/CxyBlogs/source/_posts/Charles/Snip20200521_53.png" srcset="undefined" alt></p>
+<p>配置参数解析：<br>bandwidth —— 带宽，即上行、下行数据传输速度<br>utilisation —— 带宽可用率，大部分modern是100%<br>round-trip latency —— 第一个请求的时延，单位是ms。<br>MTU —— 最大传输单元，即TCP包的最大size，可以更真实模拟TCP层，每次传输的分包情况。<br>Releability —— 指连接的可靠性。这里指的是10kb的可靠率。用于模拟网络不稳定。<br>Stability —— 连接稳定性，也会影响带宽可用性。用于模拟移动网络，移动网络连接一般不可靠。</p>
+<p><img src="/Users/qingclass/Desktop/CXY66yan.github.io/CxyBlogs/source/_posts/Charles/Snip20200521_54.png" srcset="undefined" alt></p>
 <p>##charles如何打断点，修改response数据</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>打开将要访问的网址，通过Charles抓到想要修改数据的接口,双击接口连接勾选Breakpoints</span><br></pre></td></tr></table></figure>
 
@@ -185,21 +191,41 @@
 
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">6.修改数据后，点击Execute，查看访问的页面，数据将会显示已修改的Response数据</span><br></pre></td></tr></table></figure>
 
-<p>##Charles设置断点</p>
-<p>1.选中接口-双击-compose</p>
-<p>2.设置断点：<br>代理-断点设置-启用断点-添加（有些不知道天什么的可以用不填/*）<br>选择该接口-右键选择断点-proxy-breakpoint settings中进行编辑（请求或响应）</p>
+<h3 id="Charles设置断点"><a href="#Charles设置断点" class="headerlink" title="Charles设置断点"></a>Charles设置断点</h3><p>1.选择要设置断点的接口</p>
+<p>2.右键选择 Breakpoints</p>
+<p><img src="/Users/qingclass/Desktop/CXY66yan.github.io/CxyBlogs/source/_posts/Charles/Snip20200519_27.png" srcset="undefined" alt></p>
+<p>3.断点的相关配置， Proxy ——&gt;Breakpoint Settings</p>
+<p><img src="/Users/qingclass/Desktop/CXY66yan.github.io/CxyBlogs/source/_posts/Charles/Snip20200519_28.png" srcset="undefined" alt></p>
+<p>4.双击刚刚已经设置的断点接口，进行设置</p>
+<p>1.把参数删掉，写*</p>
+<p>2.勾选请求，可修改请求</p>
+<p>3.勾选返回，可修改返回</p>
+<p><img src="/Users/qingclass/Desktop/CXY66yan.github.io/CxyBlogs/source/_posts/Charles/Snip20200519_32.png" srcset="undefined" alt></p>
+<p>5.点击ok, 客户端再重新请求一下接口， 当跑到设置断点的接口时，网页会暂停，这个时候Charles进入breakpoints </p>
+<p><img src="/Users/qingclass/Desktop/CXY66yan.github.io/CxyBlogs/source/_posts/Charles/Snip20200519_31.png" srcset="undefined" alt></p>
+<ol start="6">
+<li><p>点击Edit Request 修改请求参数。这里根据你要测试的数据来修改,修改好参数后，点击Execute （执行）。 另外 Abort （中止）， Cancel （取消）</p>
+<p><img src="/Users/qingclass/Desktop/CXY66yan.github.io/CxyBlogs/source/_posts/Charles/Snip20200519_33.png" srcset="undefined" alt></p>
+</li>
+</ol>
+<p>7.点击执行后，来到返回的页面，这个时候在Charles可以查看返回的数据。也可以对其进行修改，好了之后 点击 Execute </p>
+<p>8.这个时候页面就可以执行完成啦，可以看到 修改过后的请求返回是什么效果，达到测试的目的。</p>
 <p>在请求上：即从应用程序发送请求之后，但后端接收到请求之前<br>在响应上：即在后端发送响应之后但在响应之前</p>
 <p>##Charles的破解方法：</p>
 <p><strong>1.修改charles.jar文件或者替换掉原来的软件。</strong><br>从官网上下载Charles，安装完毕，需要点击运行一起，command + q 彻底退出一次<br>在命令行终端输入 sudo spctl –master-disable 信任任何来源 （避免软件提示破损问题）<br>在命令行终端输入 open /Applications/Charles.app/Contents/Java/ 打开并替换 charles.jar（最好备份一下源文件, 我修改源文件名charles.jar.bak）<br>替换完成后，在此打开charles软件<br>替换 charles.jar的文件的下载地址<br>百度云：链接:<a href="https://pan.baidu.com/s/1_-Qsq_BzpQiqCStaD8XjUQ" target="_blank" rel="noopener">https://pan.baidu.com/s/1_-Qsq_BzpQiqCStaD8XjUQ</a> 密码:vsgq<br><strong>2.注册码</strong><br>按照常规安装好charles软件之后，打开软件，点击工具栏中的help –&gt; register<br>输入如下信息：<br>Registered Name: <a href="https://zhile.io" target="_blank" rel="noopener">https://zhile.io</a><br>License Key: 48891cf209c6d32bf4<br>使用Charles进行手机抓包（iOS）<br><strong>注意：对某个手机进行抓包的时候，该手机的安全证书必须是跟该电脑连接同一个Wi-Fi安装的</strong></p>
-<p>###手机上安装安全证书：（iOS-iphonex）</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="number">1.</span>在浏览器中输入http://chls.pro/ssl</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span>设置-通用描述文件-点击安装</span><br><span class="line"></span><br><span class="line"><span class="number">3.</span>设置-通用-关于本机-证书信任设置点击开启\</span><br></pre></td></tr></table></figure>
+<p>###IOS上安装安全证书：（iOS-iphonex）</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="number">1.</span>在浏览器中输入http://chls.pro/ssl</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span>设置-通用描述文件-点击安装</span><br><span class="line"></span><br><span class="line"><span class="number">3.</span>设置-通用-关于本机-证书信任设置点击开启</span><br></pre></td></tr></table></figure>
 
-<p>###手机上安装安全证书：（android-vivox27）</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">如何将之前的安全证书删除：</span><br><span class="line"></span><br><span class="line">设置-安全与隐私更多安全设置-用户凭据-点击证书-删除</span><br><span class="line"></span><br><span class="line">重新安装证书：</span><br><span class="line"></span><br><span class="line">电脑和手机连接同一个网络，电脑上点击安装安全证书-手机在浏览器器中输入http://charlesproxy.com/getssl -点击下载-在浏览器的下载中心打开</span><br></pre></td></tr></table></figure>
+<p>###Android上安装安全证书：（android-vivox27）</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">如何将之前的安全证书删除：</span><br><span class="line"></span><br><span class="line">设置-安全与隐私更多安全设置-用户凭据-点击证书-删除</span><br><span class="line"></span><br><span class="line">重新安装证书：</span><br><span class="line"></span><br><span class="line">1.电脑和手机连接同一个网络，打开Charles,Help -&gt; SSL Proxying -&gt; Save Charles Root Certificate...，将这个保存到桌面（只要记住在哪里即可），选择哪个格式的都可以，命名为1.cer</span><br><span class="line"></span><br><span class="line">2.将1.cer文件发送到Android手机上,进入手机设置，点击“安全和隐私----更多安全设置-&gt;从存储设备安装-&gt;Download-&gt;.crt文件-&gt;确定”，在弹出窗，对证书命名为：Charles，点击确定（首次安装证书会让输入锁屏密码）。至此证书安装成功！立即在电脑端对手机网络进行抓包吧！</span><br><span class="line">上述步骤不同厂商的手机还是稍微有些区别的</span><br><span class="line">在Android手机上找到<span class="number">1.</span>cer文件，打开手机的密码，然后重新命名<span class="number">1.</span>cer文件即可。</span><br></pre></td></tr></table></figure>
+
+<h2 id="荣耀10青春版如何设置代理"><a href="#荣耀10青春版如何设置代理" class="headerlink" title="荣耀10青春版如何设置代理"></a>荣耀10青春版如何设置代理</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>连上需要连接的网络，长按网络几秒会弹出选项，选择修改网络；</span><br><span class="line"><span class="number">2.</span>勾选显示高级选项，将【IP设置】改成【静止】</span><br><span class="line"><span class="number">3.</span>点击代理选择手动</span><br></pre></td></tr></table></figure>
 
 <p>####Charles中一个手机可以在不同网段下安装多个证书</p>
 <p>#####charles抓包iOS手机报服务器开小差？</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">电脑和手机连接同一个网段，电脑上点击help-安装证书到手机-OK-手机浏览器中输入chls.pro/ssl-下载-设置-通用-描述文件-安装-设置-通用-关于本机-证书信任设置-开启即可</span><br></pre></td></tr></table></figure>
+
+<h2 id="手机连上网络但显示没网"><a href="#手机连上网络但显示没网" class="headerlink" title="手机连上网络但显示没网"></a>手机连上网络但显示没网</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>检查手机的代理有没有打开，如果代理开着需要把代理关了看一下</span><br></pre></td></tr></table></figure>
 
 
             <hr>

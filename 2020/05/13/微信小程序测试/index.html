@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content>
+  <meta name="author" content="陈孝艳">
+  <meta name="keywords" content>
+  <title>微信小程序测试 ~ missyan的博客</title>
+
+  <link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/lib/mdbootstrap/css/mdb.min.css">
+<link rel="stylesheet" href="/lib/github-markdown/github-markdown.min.css">
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1067060_qzomjdt8bmp.css">
+
+
+  <link rel="stylesheet" href="/lib/prettify/tomorrow-night-eighties.min.css">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+  <link rel="stylesheet" href="/lib/fancybox/jquery.fancybox.min.css">
+
+
+</head>
+
+
+<body>
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>missyan的博客</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/archives/">Archives</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/categories/">Categories</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/tags/">Tags</a>
+          </li>
+        
+          
+          
+          <li class="nav-item">
+            <a class="nav-link" href="/about/">About</a>
+          </li>
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" data-toggle="modal" data-target="#modalSearch">&nbsp;&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+
+</nav>
+
+    <div class="view intro-2" id="background"
+         style="background: url('/img/default.png')no-repeat center center;
+           background-size: cover;
+           background-attachment: fixed;">
+      <div class="full-bg-img">
+        <div class="mask rgba-black-light flex-center">
+          <div class="container text-center white-text fadeInUp">
+            <span class="h2" id="subtitle">
+              
+            </span>
+
+            
+              <br>
+              
+                <p class="mt-3">
+                  <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                  Wednesday, May 13th 2020, 10:36 am
+                </p>
+              
+
+              <p>
+                
+                  
+                  &nbsp;<i class="far fa-chart-bar"></i>
+                  <span class="post-count">
+                    1.2k 字
+                  </span>&nbsp;
+                
+
+                
+                  
+                  &nbsp;<i class="far fa-clock"></i>
+                  <span class="post-count">
+                      4 分钟
+                  </span>&nbsp;
+                
+
+                
+                  <!-- 不蒜子统计文章PV -->
+                  
+                  &nbsp;<i class="far fa-eye" aria-hidden="true"></i>&nbsp;
+                  <span id="busuanzi_container_page_pv">
+                    <span id="busuanzi_value_page_pv"></span> 次
+                  </span>&nbsp;
+                
+              </p>
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-md">
+      <div class="py-5 z-depth-3" id="board">
+        <div class="post-content mx-auto" id="post">
+          <div class="markdown-body">
+            <p>[TOC]</p>
+<h2 id="微信小程序的基本介绍"><a href="#微信小程序的基本介绍" class="headerlink" title="微信小程序的基本介绍"></a>微信小程序的基本介绍</h2><p>###定义</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">依附于微信而无需再次下载安装的移动端应用程序</span><br></pre></td></tr></table></figure>
+
+<p>###特点</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>无需下载，即用即走；</span><br><span class="line"><span class="number">2.</span>功能丰富，清爽体验；</span><br><span class="line"><span class="number">3.</span>流量大，易裂变；</span><br></pre></td></tr></table></figure>
+
+<h3 id="局限性"><a href="#局限性" class="headerlink" title="局限性"></a>局限性</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>数量：每个应用最大支持页面层级为<span class="number">10</span>层；</span><br><span class="line"><span class="number">2.</span>大小：小程序支持不超过<span class="number">8</span>M的源码文件（分包加载，单个包不超过<span class="number">2</span>m）;</span><br><span class="line"><span class="number">3.</span>逻辑：过于复杂逻辑存在不可控的异常问题；</span><br></pre></td></tr></table></figure>
+
+<h3 id="微信小程序开发的官方文档链接"><a href="#微信小程序开发的官方文档链接" class="headerlink" title="微信小程序开发的官方文档链接"></a>微信小程序开发的官方文档链接</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://developers.weixin.qq.com/miniprogram/design/</span><br></pre></td></tr></table></figure>
+
+<h2 id="微信小程序的开发工具"><a href="#微信小程序的开发工具" class="headerlink" title="微信小程序的开发工具"></a>微信小程序的开发工具</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span>申请开发者APPID</span><br><span class="line">操作步骤：</span><br><span class="line">	<span class="number">1.</span>打开微信公众平台链接:https://mp.weixin.qq.com/</span><br><span class="line">    <span class="number">2.</span>点击立即注册，选择小程序注册账号（里面有服务号，订阅号，小程序，企业微信这四种账号）</span><br><span class="line">    <span class="number">3.</span>提交对应账号信息即可</span><br><span class="line"><span class="number">2.</span>下载工具</span><br><span class="line">操作步骤：</span><br><span class="line"><span class="number">1.</span>打开微信开放文档链接：https://developers.weixin.qq.com/miniprogram/dev/devtools/devtools.html</span><br><span class="line"><span class="number">2.</span>点击工具-选择下载-稳定版本-选择对应的操作系统即可下载</span><br></pre></td></tr></table></figure>
+
+<h2 id="项目结构"><a href="#项目结构" class="headerlink" title="项目结构"></a>项目结构</h2><h3 id="文件类型"><a href="#文件类型" class="headerlink" title="文件类型"></a>文件类型</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.json后缀:JSON配置文件</span><br><span class="line">.wxss后缀：wxss样式文件（相当于前端的css）</span><br><span class="line">.wxml后缀：wxml模版文件(相当于前端的html)</span><br><span class="line">.js后缀：js脚本文件</span><br></pre></td></tr></table></figure>
+
+<h3 id="应用区别"><a href="#应用区别" class="headerlink" title="应用区别"></a>应用区别</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#小程序与web程序的区别：</span></span><br><span class="line"><span class="number">1.</span>语言和技术不同：web程序使用HTML+CSS而小程序使用WXML+WXSS；</span><br><span class="line"><span class="number">2.</span>使用的标签不同：web程序使用div/span/img而小程序使用view/text/image；</span><br><span class="line"><span class="number">3.</span>web应用支持JS(DOM/BOM),小程序不支持；</span><br><span class="line"><span class="number">4.</span>框架不同：web应用支持Jquery框架,小程序不支持；</span><br><span class="line"><span class="comment">#小程序与app的区别：</span></span><br><span class="line"><span class="number">1.</span>app需要安装，麻烦；小程序不需要安装，简单；</span><br><span class="line"><span class="number">2.</span>app需要注册登录，小程序只需要授权即可登录，不需要注册登录过程；</span><br><span class="line"><span class="number">3.</span>开发一个app的费用是开发一个小程序的<span class="number">10</span>倍；</span><br><span class="line"><span class="number">4.</span>app需要开发Android和iOS，小程序兼容各种手机；</span><br><span class="line"><span class="number">5.</span>从运营角度考虑，app需要自行引流，而小程序有<span class="number">10</span>亿微信流量，流量大；</span><br></pre></td></tr></table></figure>
+
+<h2 id="项目与产品的关系"><a href="#项目与产品的关系" class="headerlink" title="项目与产品的关系"></a>项目与产品的关系</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">联系：相辅相成，逐步递进</span><br><span class="line">区别：</span><br><span class="line"><span class="number">1.</span>定位不同：</span><br><span class="line">产品：做什么？</span><br><span class="line">项目：怎么做？</span><br><span class="line"><span class="number">2.</span>角色不同？</span><br><span class="line">产品：管理需求,计划</span><br><span class="line">项目：分解任务和执行</span><br><span class="line"><span class="number">3.</span>周期不同：</span><br><span class="line">产品：长，被迭代完结束</span><br><span class="line">项目：端，开发上线结束</span><br></pre></td></tr></table></figure>
+
+<h2 id="小程序项目熟悉"><a href="#小程序项目熟悉" class="headerlink" title="小程序项目熟悉"></a>小程序项目熟悉</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#项目介绍</span></span><br><span class="line"><span class="number">1.</span>基本简介</span><br><span class="line">项目类型是什么？</span><br><span class="line">项目产品提供哪些服务？</span><br><span class="line">项目产品的用户对象是谁？</span><br><span class="line">项目产品需要达到的目标？</span><br><span class="line"><span class="number">2.</span>技术栈</span><br><span class="line">前端：WXML+WXSS+JS</span><br><span class="line">后端：LAMP(Linux+apache+mysql+php)(具体项目使用技术需要根据实际情况)</span><br><span class="line"><span class="comment">#产品业务</span></span><br><span class="line"><span class="number">1.</span>基本模块</span><br><span class="line"><span class="number">2.</span>核心业务</span><br><span class="line"><span class="number">3.</span>小程序登录</span><br></pre></td></tr></table></figure>
+
+<h2 id="功能测试设计"><a href="#功能测试设计" class="headerlink" title="功能测试设计"></a>功能测试设计</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#需求分析</span></span><br><span class="line"><span class="number">1.</span>需求的来源：</span><br><span class="line">外部：用户</span><br><span class="line">内部：客服，运营，教研，老板</span><br><span class="line"><span class="number">2.</span>需求的展现：</span><br><span class="line">需求说明文档</span><br><span class="line">产品原型图，设计图</span><br><span class="line"><span class="number">3.</span>分析思路：</span><br><span class="line">总：从产品介绍及背景把控被测对象</span><br><span class="line">分：按照需求拆分功能模块，知道能够设计测试用例</span><br><span class="line">总：从产品层面串联整个模块设计测试场景</span><br><span class="line"><span class="number">4.</span>结果展示：</span><br><span class="line">Xmind测试点整理</span><br><span class="line">业务流程图</span><br><span class="line">测试点文本</span><br></pre></td></tr></table></figure>
+
+<h2 id="小程序的环境类型"><a href="#小程序的环境类型" class="headerlink" title="小程序的环境类型"></a>小程序的环境类型</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">由小程序的版本类型可以看出，我们一般会准备三套环境：</span><br><span class="line"></span><br><span class="line"><span class="number">1</span>、开发版访问测试环境</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>、体验版访问预发布环境</span><br><span class="line"></span><br><span class="line"><span class="number">3</span>、正式版访问生产环境</span><br></pre></td></tr></table></figure>
+
+<h2 id="小程序测试注意事项"><a href="#小程序测试注意事项" class="headerlink" title="小程序测试注意事项"></a>小程序测试注意事项</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>、留意分享功能的权限：若某页面对游客访问有权限限制，则需要设置取消其分享功能。</span><br><span class="line"></span><br><span class="line">PS:目前小程序不支持直接分享朋友圈，只能分享微信好友；有很多小程序通过生成带有二维码的图片，用户可以退出程序将图片发布到朋友圈</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>、小程序强制更新功能：新版小程序上线后，自动、强制更新。</span><br></pre></td></tr></table></figure>
+
+<h2 id="小程序的测试点"><a href="#小程序的测试点" class="headerlink" title="小程序的测试点"></a>小程序的测试点</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>、测试点如下：权限测试、UI测试、功能测试、兼容性测试、易用性测试、网络测试、性能测试、接口测试</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>、测试点具体说明：见下图</span><br></pre></td></tr></table></figure>
+
+<p><img src="/Users/qingclass/Desktop/CXY66yan.github.io/CxyBlogs/source/_posts/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F%E6%B5%8B%E8%AF%95/20180827170540977.png" srcset="undefined" alt></p>
+<p>##小程序上线前的注意事项</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span>、测试环境使用测试域名。当在测试环境将所有功能跑通后，需要开发使用正式域名，然后再去做下回归验收测试。</span><br><span class="line"></span><br><span class="line"><span class="number">2</span>、回归验收测试完成后，整理测试报告</span><br></pre></td></tr></table></figure>
+
+
+            <hr>
+          </div>
+          <br>
+          <div>
+            <p>
+            
+              <span>
+                <i class="iconfont icon-inbox"></i>
+                
+                  <a class="hover-with-bg" href="/categories/%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95">功能测试</a>
+                  &nbsp;
+                
+              </span>&nbsp;&nbsp;
+            
+            
+              <span>
+                <i class="iconfont icon-tag"></i>
+                
+                  <a class="hover-with-bg" href="/tags/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8F">微信小程序</a>
+                
+                  <a class="hover-with-bg" href="/tags/%E5%8A%9F%E8%83%BD%E6%B5%8B%E8%AF%95">功能测试</a>
+                
+              </span>
+            
+            </p>
+            
+              <p class="note note-warning">本博客所有文章除特别声明外，均采用 <a href="https://zh.wikipedia.org/wiki/Wikipedia:CC_BY-SA_3.0%E5%8D%8F%E8%AE%AE%E6%96%87%E6%9C%AC" rel="nofollow noopener">CC BY-SA 3.0协议</a> 。转载请注明出处！</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="d-none d-lg-block col-lg-2 toc-container">
+      
+  <div id="toc">
+    <p class="h4"><i class="far fa-list-alt"></i>&nbsp;TOC</p>
+    <div id="tocbot"></div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- custom -->
+
+
+<!-- Comments -->
+<div class="col-lg-7 mx-auto nopadding-md">
+  <div class="container comments mx-auto" id="comments">
+    
+  </div>
+</div>
+
+    
+  </main>
+
+  
+    <a class="z-depth-1" id="scroll-top-button" href="#" role="button">
+      <i class="fa fa-chevron-up scroll-top-arrow" aria-hidden="true"></i>
+    </a>
+  
+
+  
+    <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">keyword</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+  <footer class="mt-5">
+  <div class="text-center py-3">
+    <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><b>Hexo</b></a>
+    <i class="iconfont icon-love"></i>
+    <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"> <b>Fluid</b></a>
+    <br>
+
+    
+  
+    <!-- 不蒜子统计PV -->
+    
+    &nbsp;<span id="busuanzi_container_site_pv">总访问量 
+          <span id="busuanzi_value_site_pv"></span> 次</span>&nbsp;
+  
+  
+    <!-- 不蒜子统计UV -->
+    
+    &nbsp;<span id="busuanzi_container_site_uv">总访客数 
+            <span id="busuanzi_value_site_uv"></span> 人</span>&nbsp;
+  
+  <br>
+
+
+
+    
+
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="/lib/jquery/jquery.min.js" ></script>
+<script src="/lib/popper/popper.min.js" ></script>
+<script src="/lib/bootstrap/js/bootstrap.min.js" ></script>
+<script src="/lib/mdbootstrap/js/mdb.min.js" ></script>
+<script src="/js/main.js" ></script>
+
+
+  <script src="/js/lazyload.js" ></script>
+
+
+
+  
+    <script src="/lib/tocbot/tocbot.min.js" ></script>
+  
+  <script src="/js/post.js" ></script>
+
+
+
+  <script src="/lib/smooth-scroll/smooth-scroll.min.js" ></script>
+
+
+
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+<!-- Plugins -->
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+  <script src="/lib/prettify/prettify.min.js" ></script>
+  <script>
+    $(document).ready(function () {
+      $('pre').addClass('prettyprint  linenums');
+      prettyPrint();
+    })
+  </script>
+
+
+
+  <script src="/lib/typed/typed.min.js" ></script>
+  <script>
+    var typed = new Typed('#subtitle', {
+      strings: [
+        '  ',
+        "微信小程序测试&nbsp;",
+      ],
+      cursorChar: "_",
+      typeSpeed: 70,
+      loop: false,
+    });
+    typed.stop();
+    $(document).ready(function () {
+      $(".typed-cursor").addClass("h2");
+      typed.start();
+    });
+  </script>
+
+
+
+  <script src="/lib/anchor/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "false",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
+
+
+
+  <script src="/js/local-search.js" ></script>
+  <script>
+    var path = "/local-search.xml";
+    var inputArea = document.querySelector("#local-search-input");
+    inputArea.onclick = function () {
+      getSearchFile(path);
+      this.onclick = null
+    }
+  </script>
+
+
+
+  <script src="/lib/fancybox/jquery.fancybox.min.js" ></script>
+  <script>
+    $("#post img:not(.no-zoom img, img[no-zoom])").each(
+      function () {
+        var element = document.createElement("a");
+        $(element).attr("data-fancybox", "images");
+        $(element).attr("href", $(this).attr("src"));
+        $(this).wrap(element);
+      }
+    );
+  </script>
+
+
+
+
+
+
+
+</body>
+</html>
